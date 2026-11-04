@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HikeJournal</title>
+<meta name="description" content="Osebni dnevnik vzponov: vsi tvoji pohodi kot oranžne črte na enem 3D zemljevidu, s slikami in opisi na tvojem Google Drive.">
+<meta property="og:title" content="HikeJournal">
+<meta property="og:description" content="Vsi tvoji pohodi na enem 3D zemljevidu.">
+<meta property="og:image" content="img/zemljevid.jpg">
+<meta name="theme-color" content="#14181b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff5f0f'/%3E%3Cpath d='M5 24 13 11l4 6 3-4 7 11z' fill='%2314181b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap">
+<style>
+:root{
+  --bg:#f4f6f6; --surface:#fff; --surface-2:#e9edee; --ink:#14181b; --muted:#56616b; --line:#d9dfe2;
+  --accent:#ff5f0f; --accent-ink:#b93c06; --shadow:0 18px 50px rgba(20,24,27,.16);
+  --f-display:'Barlow Condensed','Arial Narrow',system-ui,sans-serif; --f-body:'Barlow',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#101417; --surface:#1a2126; --surface-2:#242d33; --ink:#eef2f4; --muted:#a3afb8; --line:#2f3a41;
+  --accent:#ff6a1f; --accent-ink:#ff9a62; --shadow:0 18px 50px rgba(0,0,0,.5); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101417; --surface:#1a2126; --surface-2:#242d33; --ink:#eef2f4; --muted:#a3afb8; --line:#2f3a41;
+  --accent:#ff6a1f; --accent-ink:#ff9a62; --shadow:0 18px 50px rgba(0,0,0,.5); color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent-ink)}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance}
+h1{font-size:clamp(46px,7.4vw,92px);line-height:.92;font-weight:800;text-transform:uppercase}
+h1 em{font-style:normal;color:var(--accent)}
+h2{font-size:clamp(32px,4.4vw,54px);line-height:1;font-weight:800;text-transform:uppercase}
+h3{font-size:24px;line-height:1.1;font-weight:700}
+p{margin:0;max-width:62ch}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
+.lead{font-size:20px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 22px;border-radius:14px;background:var(--ink);color:var(--bg);font:600 17px var(--f-body);text-decoration:none;white-space:nowrap}
+.btn.accent{background:var(--accent);color:#14181b}
+.btn.ghost{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.btn.sm{height:40px;padding:0 14px;font-size:15px;border-radius:11px}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+section{padding-block:clamp(56px,8vw,104px)}
+
+.nav{display:flex;align-items:center;gap:16px;padding-block:18px}
+.logo{display:flex;align-items:center;gap:10px;font:800 24px var(--f-display);text-transform:uppercase;color:var(--ink);text-decoration:none}
+.mark{width:36px;height:36px;border-radius:10px;background:var(--accent);display:grid;place-items:center;flex:none}
+.nav nav{display:flex;gap:20px;margin-left:auto;align-items:center}
+.nav nav a.l{color:var(--ink);text-decoration:none;font-weight:600;font-size:15px}
+.nav nav a.l:hover{color:var(--accent-ink)}
+@media (max-width:720px){.nav nav a.l{display:none}}
+
+.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(28px,5vw,72px);align-items:center;padding-block:clamp(20px,4vw,56px) clamp(40px,6vw,72px)}
+.hero-copy{display:flex;flex-direction:column;gap:24px;min-width:0}
+.cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.cta small{color:var(--muted);font-size:14px}
+.numbers{display:flex;gap:32px;flex-wrap:wrap;padding-top:14px;border-top:1px solid var(--line)}
+.numbers div{display:flex;flex-direction:column}
+.numbers b{font:800 40px/1 var(--f-display);font-variant-numeric:tabular-nums}
+.numbers span{font-size:14px;color:var(--muted)}
+
+.phone{width:300px;aspect-ratio:390/844;border-radius:46px;background:#0d1012;padding:10px;box-shadow:var(--shadow);position:relative;flex:none}
+.phone img{width:100%;height:100%;object-fit:cover;border-radius:37px}
+@media (max-width:860px){.hero{grid-template-columns:1fr}.phone{width:min(280px,78vw);margin:0 auto}}
+
+.browser{border-radius:18px;overflow:hidden;box-shadow:var(--shadow);background:var(--surface);border:1px solid var(--line)}
+.browser .bar{display:flex;align-items:center;gap:7px;height:36px;padding:0 14px;background:var(--surface-2)}
+.browser .bar i{width:11px;height:11px;border-radius:50%;background:var(--line)}
+.browser .bar span{margin-left:12px;font-size:13px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.shot-cap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:14px;font-size:15px;color:var(--muted)}
+
+.head{display:flex;flex-direction:column;gap:14px;margin-bottom:36px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:900px){.grid3{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.card .n{font:800 44px/1 var(--f-display);color:var(--accent)}
+.card p{color:var(--muted);font-size:16px}
+
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+.list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.list li{display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start}
+.list li::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--accent);margin-top:7px;justify-self:center}
+.list b{display:block}
+.list span{color:var(--muted);font-size:16px}
+
+.cmp{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden;font-size:16px}
+.cmp th,.cmp td{padding:14px 18px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.cmp tr:last-child td{border-bottom:0}
+.cmp thead th{font:700 20px var(--f-display);text-transform:uppercase;background:var(--surface-2)}
+.cmp thead th:nth-child(3){color:var(--accent-ink)}
+.cmp td:first-child{font-weight:600;width:24%}
+.cmp td{color:var(--muted)}
+.cmp td:nth-child(3){color:var(--ink)}
+.cmp-wrap{overflow-x:auto;border-radius:20px}
+@media (max-width:640px){
+  .cmp thead{display:none}
+  .cmp,.cmp tbody,.cmp tr,.cmp td{display:block;width:100%}
+  .cmp tr{border-bottom:1px solid var(--line);padding:10px 0}
+  .cmp td{border:0;padding:4px 16px}
+  .cmp td:first-child{width:auto;font-size:18px}
+  .cmp td:nth-child(2)::before{content:"Strava: ";font-weight:600;color:var(--ink)}
+  .cmp td:nth-child(3)::before{content:"HikeJournal: ";font-weight:600;color:var(--accent-ink)}
+}
+.note{margin-top:16px;font-size:15px;color:var(--muted)}
+
+.final{background:var(--ink);color:var(--bg);border-radius:28px;padding:clamp(32px,6vw,64px);display:flex;flex-direction:column;gap:22px;align-items:flex-start}
+.final p{color:color-mix(in srgb,var(--bg) 75%,transparent)}
+footer{padding-block:32px 48px;font-size:14px;color:var(--muted);display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap;border-top:1px solid var(--line)}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="logo" href="./"><span class="mark"><svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 26 13 9l5 8 4-5 8 14z" fill="#14181b"/></svg></span>HikeJournal</a>
+  <nav>
+    <a class="l" href="#kako">Kako deluje</a>
+    <a class="l" href="#strava">Strava</a>
+    <a class="l" href="#podatki">Podatki</a>
+    <a class="btn sm" href="app/">Odpri aplikacijo</a>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="hero-copy">
+      <span class="eyebrow">Osebni dnevnik vzponov</span>
+      <h1>Vsi tvoji vrhovi na <em>enem</em> zemljevidu</h1>
+      <p class="lead">Uvoziš GPX iz Strave in vsak pohod postane oranžna črta na 3D reliefu. Klikneš črto in vidiš datum, statistike, višinski profil, slike in opis tistega dne.</p>
+      <div class="cta">
+        <a class="btn accent" href="app/">Odpri aplikacijo
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <small>Brezplačno · v brskalniku · prijava z Google</small>
+      </div>
+      <div class="numbers" aria-label="Primer: pet pohodov">
+        <div><b>5</b><span>pohodov</span></div>
+        <div><b>74 km</b><span>skupaj</span></div>
+        <div><b>2868 m</b><span>najvišje · Triglav</span></div>
+      </div>
+    </div>
+    <div class="phone"><img src="img/telefon.jpg" width="390" height="844" alt="HikeJournal na telefonu: pot na Triglav v 3D in statistike pohoda"></div>
+  </div>
+
+  <div class="wrap">
+    <div class="browser">
+      <div class="bar"><i></i><i></i><i></i><span>HikeJournal · Kamniško-Savinjske Alpe</span></div>
+      <img src="img/zemljevid.jpg" width="1440" height="900" alt="Pet pohodov po Kamniško-Savinjskih Alpah kot oranžne črte na 3D reliefu, ob strani seznam pohodov" loading="lazy">
+    </div>
+    <div class="shot-cap"><span>Pet pohodov iz Strave na enem zaslonu. Relief za Slovenijo je iz LiDAR podatkov GURS.</span><span>Oddaljeno 2D, od zooma 9 naprej 3D.</span></div>
+  </div>
+
+  <section id="kako" class="wrap">
+    <div class="head">
+      <span class="eyebrow">Kako deluje</span>
+      <h2>Trije koraki</h2>
+    </div>
+    <div class="grid3">
+      <div class="card"><span class="n">1</span><h3>Izvozi GPX iz Strave</h3><p>Na aktivnosti v Stravi: <i>⋯ → Export GPX</i>. Uvoziš lahko več datotek naenkrat. Ista aktivnost se ne uvozi dvakrat.</p></div>
+      <div class="card"><span class="n">2</span><h3>Uvozi v HikeJournal</h3><p>Aplikacija izračuna razdaljo, vzpon, čas v gibanju in srčni utrip ter poišče ime izhodišča in vrha v OpenStreetMap.</p></div>
+      <div class="card"><span class="n">3</span><h3>Dodaj slike in opis</h3><p>Slike z GPS se pokažejo na zemljevidu tam, kjer so bile posnete. Ostale se umestijo na pot po času posnetka.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap split">
+    <div class="browser">
+      <div class="bar"><i></i><i></i><i></i><span>Izvir Kamniške Bistrice – Kamniško sedlo</span></div>
+      <img src="img/pohod.jpg" width="1000" height="900" alt="Podrobnosti pohoda: statistike, višinski profil, potek in izbrana pot na 3D reliefu" loading="lazy">
+    </div>
+    <div class="head" style="margin:0">
+      <span class="eyebrow">Vsak pohod</span>
+      <h2>Kot stran v dnevniku</h2>
+      <ul class="list">
+        <li><div><b>Statistike, ki se ujemajo s Stravo</b><span>Razdalja, vzpon, čas skupaj in v gibanju, utrip povprečno in največ.</span></div></li>
+        <li><div><b>Višinski profil z označenim vrhom</b><span>Potek: kdaj si začel, bil na vrhu in prišel nazaj.</span></div></li>
+        <li><div><b>Slike in videi</b><span>Shranjeni v originalni kakovosti, s pomanjšanimi sličicami za hiter prikaz.</span></div></li>
+        <li><div><b>Knjižnica</b><span>Iskanje po imenu, vrhu ali izhodišču. »Vse poti v 3D« pokaže vse naenkrat.</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="strava" class="wrap">
+    <div class="head">
+      <span class="eyebrow">Zakaj ne samo Strava</span>
+      <h2>Strava beleži treninge.<br>HikeJournal hrani spomine.</h2>
+      <p class="lead">Strava ostane za snemanje. HikeJournal je za to, kar pride potem.</p>
+    </div>
+    <div class="cmp-wrap">
+      <table class="cmp">
+        <thead><tr><th></th><th>Strava</th><th>HikeJournal</th></tr></thead>
+        <tbody>
+          <tr><td>Vse poti skupaj</td><td>Osebni heatmap (tudi 3D), samo z naročnino. Kot toplotna slika, posamezne poti ne odpreš.</td><td>Vsaka pot je svoja črta. Klikneš jo in odpreš ta pohod.</td></tr>
+          <tr><td>Fokus</td><td>Tempo, segmenti, forma, družbeni feed.</td><td>Gore: vrh, izhodišče, višinski profil, slike na kraju posnetka.</td></tr>
+          <tr><td>Slike in video</td><td>Pripete na aktivnost, v Stravini aplikaciji.</td><td>Na zemljevidu tam, kjer so bile posnete, v originalni kakovosti.</td></tr>
+          <tr><td>Kje so podatki</td><td>Na Stravinih strežnikih.</td><td>V mapi HikeJournal na tvojem Google Drive.</td></tr>
+          <tr><td>Cena</td><td>Brezplačno; heatmap in 3D z naročnino.</td><td>Brezplačno. 15 GB Google Drive prostora.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">HikeJournal ne snema poti in se ne poveže s Stravo samodejno: GPX izvoziš ročno.</p>
+  </section>
+
+  <section id="podatki" class="wrap split">
+    <div class="head" style="margin:0">
+      <span class="eyebrow">Tvoji podatki</span>
+      <h2>Vse ostane na tvojem Google Drive</h2>
+      <p class="lead">Ni strežnika, ni računa pri nas. Aplikacija teče v brskalniku in piše neposredno v tvoj Drive.</p>
+    </div>
+    <ul class="list">
+      <li><div><b>Omejen dostop</b><span>Dovoljenje <code>drive.file</code>: aplikacija vidi samo datoteke, ki jih je ustvarila sama. Ostalega Drive ne vidi.</span></div></li>
+      <li><div><b>Navadne datoteke</b><span>Vsak pohod je mapa z originalnim GPX, slikami, videi in <code>hike.json</code>. Odpreš jih lahko tudi brez aplikacije.</span></div></li>
+      <li><div><b>Brisanje gre v koš</b><span>Izbrisan pohod ali slika ostane 30 dni v košu na Drive.</span></div></li>
+      <li><div><b>Omejitve</b><span>Prijava v brskalniku velja približno uro, potem klikneš »Poveži znova«. Brez interneta ne deluje.</span></div></li>
+    </ul>
+  </section>
+
+  <section class="wrap">
+    <div class="final">
+      <span class="eyebrow" style="color:var(--accent)">Začni</span>
+      <h2>Uvozi svoj prvi pohod</h2>
+      <p>Potrebuješ Google račun in GPX datoteko. Brez prijave lahko aplikacijo preizkusiš v preizkusnem načinu: deluje vse, a se ob osvežitvi strani nič ne shrani.</p>
+      <a class="btn accent" href="app/">Odpri aplikacijo</a>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <span>HikeJournal · osebni projekt · <a href="zasebnost.html">Zasebnost</a></span>
+  <span>Relief © <a href="https://mapterhorn.com/attribution">Mapterhorn</a> (Slovenija: GURS LiDAR) · Satelit: Esri, Maxar, Earthstar Geographics · MapTiler · Sentinel‑2 cloudless (EOX) · Meje: Natural Earth · Imena © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a></span>
+</footer>
+</body>
+</html>

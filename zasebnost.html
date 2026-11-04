@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HikeJournal – zasebnost</title>
+<meta name="description" content="Politika zasebnosti aplikacije HikeJournal.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff5f0f'/%3E%3Cpath d='M5 24 13 11l4 6 3-4 7 11z' fill='%2314181b'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#f4f6f6;--surface:#fff;--ink:#14181b;--muted:#56616b;--line:#d9dfe2;--accent-ink:#b93c06}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#101417;--surface:#1a2126;--ink:#eef2f4;--muted:#a3afb8;--line:#2f3a41;--accent-ink:#ff9a62;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101417;--surface:#1a2126;--ink:#eef2f4;--muted:#a3afb8;--line:#2f3a41;--accent-ink:#ff9a62;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,'Segoe UI',sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px max(16px,env(safe-area-inset-left)) 64px}
+h1{font-size:34px;line-height:1.1;margin:8px 0 6px}
+h2{font-size:21px;margin:32px 0 8px}
+p,li{color:var(--ink)}
+.muted{color:var(--muted)}
+a{color:var(--accent-ink)}
+ul{padding-left:20px}
+code{background:rgba(127,127,127,.15);padding:1px 6px;border-radius:6px;font-size:.92em}
+</style>
+</head>
+<body>
+<main>
+  <p><a href="./">← HikeJournal</a></p>
+  <h1>Politika zasebnosti</h1>
+  <p class="muted">HikeJournal · velja od 4. 11. 2026</p>
+
+  <h2>Kdo upravlja aplikacijo</h2>
+  <p>HikeJournal je osebni, nekomercialni projekt. Aplikacija nima lastnega strežnika in ne zbira podatkov o uporabnikih.
+     Vprašanja lahko zastaviš prek <a href="https://github.com/anzeti-hike/hikejournal-site/issues">GitHub repozitorija te strani</a>.</p>
+
+  <h2>Katere podatke aplikacija uporablja</h2>
+  <ul>
+    <li><b>Google Drive:</b> ob prijavi aplikacija dobi dovoljenje <code>drive.file</code>. Z njim vidi in spreminja <b>samo datoteke, ki jih je ustvarila sama</b>
+        (mapa <code>HikeJournal</code>: GPX sledi, slike, videi, opisi pohodov). Ostalih datotek na tvojem Drive ne vidi.</li>
+    <li><b>E-poštni naslov Google računa:</b> prikaže se v nastavitvah in se uporabi kot namig ob ponovni prijavi. Shranjen je samo v tvojem brskalniku.</li>
+    <li><b>Lokalno v brskalniku</b> (localStorage) so shranjene nastavitve zemljevida in začasen Googlov žeton za dostop (velja največ eno uro).</li>
+  </ul>
+  <p>Vsi tvoji pohodi, slike in videi ostanejo na <b>tvojem</b> Google Drive. Aplikacija jih ne pošilja nikamor drugam in jih ne deli z nikomer.</p>
+
+  <h2>Storitve tretjih oseb</h2>
+  <p>Za delovanje zemljevida in prijave brskalnik neposredno kliče naslednje storitve. Vsaka od njih vidi tvoj IP naslov in to, katero območje zemljevida gledaš:</p>
+  <ul>
+    <li>Google (prijava in Google Drive API)</li>
+    <li>Mapterhorn (relief), Esri / MapTiler / EOX (satelitski posnetki), Natural Earth (meje držav – vgrajeno v aplikacijo)</li>
+    <li>OpenStreetMap Nominatim in Overpass: ob uvozu GPX se pošljeta koordinati izhodišča in najvišje točke, da se poiščeta imeni. To lahko izklopiš v nastavitvah.</li>
+  </ul>
+  <p>Aplikacija ne uporablja analitike, oglasov ali piškotkov za sledenje.</p>
+
+  <h2>Preklic dostopa in izbris podatkov</h2>
+  <ul>
+    <li>Dostop aplikacije do Google Drive prekličeš na <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Podatke izbrišeš tako, da na Google Drive izbrišeš mapo <code>HikeJournal</code>.</li>
+    <li>Lokalne nastavitve izbrišeš z odjavo v aplikaciji ali z brisanjem podatkov strani v brskalniku.</li>
+  </ul>
+
+  <h2>Spremembe</h2>
+  <p>Če se ta politika spremeni, bo nova različica objavljena na tej strani z novim datumom.</p>
+</main>
+</body>
+</html>
