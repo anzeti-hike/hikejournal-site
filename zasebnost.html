@@ -38,13 +38,9 @@ code{background:rgba(127,127,127,.15);padding:1px 6px;border-radius:6px;font-siz
         (mapa <code>HikeJournal</code>: GPX sledi, slike, videi, opisi pohodov). Ostalih datotek na tvojem Drive ne vidi.</li>
     <li><b>E-poštni naslov Google računa:</b> prikaže se v nastavitvah in se uporabi kot namig ob ponovni prijavi. Shranjen je samo v tvojem brskalniku.</li>
     <li><b>Lokalno v brskalniku</b> (localStorage) so shranjene nastavitve zemljevida, začasen Googlov žeton za dostop (velja največ eno uro)
-        in, če je vklopljen strežnik HikeJournal, naključen ključ seje.</li>
-    <li><b>Strežnik HikeJournal</b> (Cloudflare Workers, neobvezen): da se ni treba prijavljati vsako uro in da lahko uvažaš iz Strave, hrani
-        Googlov <i>refresh token</i> (samo za dovoljenje <code>drive.file</code>), e-poštni naslov Google računa, Stravine žetone za dostop,
-        ime Strava profila in seznam Strava aktivnosti, ki si jih zavrgel. Pohodov, sledi, slik in videov strežnik ne shranjuje:
-        GPX iz Strave samo sestavi in ga pošlje v tvoj brskalnik, ki ga shrani na tvoj Drive.</li>
-    <li><b>Strava</b> (samo če jo povežeš): dovoljenje za branje tvojih aktivnosti, tudi zasebnih. Uporablja se samo za seznam aktivnosti
-        za uvoz in za prenos njihovih GPS sledi. Podatki iz Strave so prikazani samo tebi.</li>
+        in naključen ključ seje za strežnik HikeJournal.</li>
+    <li><b>Strežnik HikeJournal</b> (Cloudflare Workers): da se ni treba prijavljati vsako uro, hrani Googlov <i>refresh token</i>
+        (samo za dovoljenje <code>drive.file</code>) in e-poštni naslov Google računa. Pohodov, sledi, slik in videov strežnik ne vidi in ne shranjuje.</li>
   </ul>
   <p>Vsi tvoji pohodi, slike in videi ostanejo na <b>tvojem</b> Google Drive. Aplikacija jih ne pošilja nikamor drugam in jih ne deli z nikomer.</p>
 
@@ -52,7 +48,7 @@ code{background:rgba(127,127,127,.15);padding:1px 6px;border-radius:6px;font-siz
   <p>Za delovanje zemljevida in prijave brskalnik neposredno kliče naslednje storitve. Vsaka od njih vidi tvoj IP naslov in to, katero območje zemljevida gledaš:</p>
   <ul>
     <li>Google (prijava in Google Drive API)</li>
-    <li>Cloudflare (gostovanje strežnika HikeJournal) in Strava (če jo povežeš)</li>
+    <li>Cloudflare (gostovanje strežnika HikeJournal)</li>
     <li>Mapterhorn (relief), Esri / MapTiler / EOX (satelitski posnetki), Natural Earth (meje držav – vgrajeno v aplikacijo)</li>
     <li>OpenStreetMap Nominatim in Overpass: ob uvozu GPX se pošljeta koordinati izhodišča in najvišje točke, da se poiščeta imeni. To lahko izklopiš v nastavitvah.</li>
   </ul>
@@ -62,8 +58,6 @@ code{background:rgba(127,127,127,.15);padding:1px 6px;border-radius:6px;font-siz
   <ul>
     <li>Dostop aplikacije do Google Drive prekličeš na <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
         Odjava v aplikaciji izbriše ključ seje na strežniku.</li>
-    <li>Povezavo s Stravo prekineš v nastavitvah aplikacije (»Prekini povezavo«) ali na <a href="https://www.strava.com/settings/apps">strava.com/settings/apps</a>;
-        strežnik takrat izbriše Stravine žetone.</li>
     <li>Podatke izbrišeš tako, da na Google Drive izbrišeš mapo <code>HikeJournal</code>.</li>
     <li>Lokalne nastavitve izbrišeš z odjavo v aplikaciji ali z brisanjem podatkov strani v brskalniku.</li>
   </ul>
