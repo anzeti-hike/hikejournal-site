@@ -96714,7 +96714,7 @@ n=p.ch
 if(n!=null&&o.h6(n).a<3e8){s=1
 break}p.ch=o
 s=3
-return A.p(A.aL3("20261105091437"),$async$tW)
+return A.p(A.aL3("20261105103311"),$async$tW)
 case 3:if(b){p.ax=!0
 p.Y()}case 1:return A.u(q,r)}})
 return A.v($async$tW,r)},
@@ -97672,7 +97672,7 @@ aA(){var s,r,q,p=this
 p.aP()
 s=v.G
 r=s.document.createElement("iframe")
-r.src="assets/assets/map/index.html?v=20261105091437"
+r.src="assets/assets/map/index.html?v=20261105103311"
 r.title="Zemljevid pohodov"
 r.allow="fullscreen"
 p.e!==$&&A.aR()

@@ -1,12 +1,13 @@
 {
+    "id": "./",
     "name": "HikeJournal",
     "short_name": "HikeJournal",
-    "start_url": ".",
+    "start_url": "./",
+    "scope": "./",
     "display": "standalone",
     "background_color": "#DFE6EC",
     "theme_color": "#14181B",
     "description": "Osebni dnevnik vzponov na 3D zemljevidu",
-    "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
         {
