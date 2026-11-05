@@ -9,6 +9,8 @@
 (function () {
   'use strict';
   var ACCENT = '#22c55e';
+  // ?snapshot: a hidden, non-interactive copy of this page that renders one hike into a picture (home screen covers)
+  var SNAP = /[?&]snapshot\b/.test(location.search);
   var WORLD = { center: [14.5, 38], zoom: innerWidth < 700 ? 0.6 : 1.6, pitch: 0, bearing: 0 };
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   var dur = function (ms) { return reduce ? 0 : ms; };
@@ -82,10 +84,13 @@
     };
   }
 
-  var map = new maplibregl.Map({ container: 'map', style: style(), center: WORLD.center, zoom: WORLD.zoom, maxPitch: 80, attributionControl: false });
+  var map = new maplibregl.Map(Object.assign({ container: 'map', style: style(), center: WORLD.center, zoom: WORLD.zoom, maxPitch: 80, attributionControl: false },
+    SNAP ? { interactive: false, preserveDrawingBuffer: true, fadeDuration: 0, pixelRatio: 1 } : {}));
   window.__hjMap = map; // for debugging from DevTools
-  map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
-  map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
+  if (!SNAP) {
+    map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
+    map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
+  }
   map.on('error', function (e) { if (window.console) console.warn('map', e && e.error && e.error.message); });
 
   function setTerrain(on, animate) {
@@ -128,6 +133,7 @@
       return { type: 'Feature', properties: { id: h.id }, geometry: { type: 'Point', coordinates: h.start } };
     }) });
     peakMarkers.forEach(function (m) { m.remove(); });
+    if (SNAP) return; // HTML markers are not part of the canvas picture
     peakMarkers = hikes.map(function (h) {
       var d = document.createElement('div'); d.className = 'pin';
       var n = document.createElement('span'); n.textContent = h.label;
@@ -164,6 +170,47 @@
     fly({ center: cam.center, zoom: zoom, bearing: 0, pitch: zoom >= 9 ? 50 : 0, duration: 4500 }, zoom >= 9);
   }
 
+  // Renders one hike (2D from above or 3D tilted along the climb) and sends the canvas back as a JPEG data URL.
+  function snapshot(c) {
+    var h = c.hike, el = document.getElementById('map');
+    el.style.width = c.w + 'px'; el.style.height = c.h + 'px';
+    map.resize();
+    if (c.settings) applySettings(Object.assign({}, c.settings, { satellite: true, auto3d: false }));
+    hikes = [h]; selected = null; syncHikes();
+    var pad = Math.round(Math.min(c.w, c.h) * 0.12), b = bounds([h]), cam;
+    if (c.threeD) {
+      setTerrain(true, false);
+      cam = map.cameraForBounds(b, { padding: pad, bearing: h.bearing });
+      if (cam) map.jumpTo({ center: cam.center, zoom: Math.min(15, cam.zoom + 0.2), bearing: h.bearing, pitch: 58 });
+    } else {
+      setTerrain(false, false);
+      cam = map.cameraForBounds(b, { padding: pad });
+      if (cam) map.jumpTo({ center: cam.center, zoom: Math.min(16, cam.zoom), bearing: 0, pitch: 0 });
+    }
+    var done = false, timer;
+    function finish() {
+      if (done) return; done = true; clearTimeout(timer);
+      try { send({ type: 'snap', reqId: c.reqId, data: map.getCanvas().toDataURL('image/jpeg', 0.85) }); }
+      catch (e) { send({ type: 'snap', reqId: c.reqId, error: String(e) }); }
+    }
+    timer = setTimeout(finish, 20000); // slow tiles: take what is there
+    map.once('idle', finish);
+    map.triggerRepaint();
+  }
+
+  function applySettings(c) {
+    var before = satKey(settings);
+    settings = Object.assign(settings, c);
+    if (satKey(settings) !== before) {
+      map.removeLayer('sat'); map.removeSource('sat');
+      map.addSource('sat', satSource(settings));
+      map.addLayer({ id: 'sat', type: 'raster', source: 'sat', minzoom: 4, paint: { 'raster-opacity': ['interpolate', ['linear'], ['zoom'], 4, 0, 6.5, 1], 'raster-fade-duration': SNAP ? 0 : 150 } }, 'shade');
+    }
+    map.setLayoutProperty('sat', 'visibility', settings.satellite ? 'visible' : 'none');
+    document.body.classList.toggle('nopeaks', settings.peakLabels === false);
+    if (terrainOn) map.setTerrain({ source: 'dem', exaggeration: settings.exaggeration });
+  }
+
   function handle(c) {
     if (!ready) { queue.push(c); return; }
     switch (c.cmd) {
@@ -176,18 +223,8 @@
       case 'north': map.easeTo({ bearing: 0, duration: dur(600) }); break;
       case 'padding': padding = c.padding; break;
       case 'media': media = c.items || []; syncMedia(); break;
-      case 'settings':
-        var before = satKey(settings);
-        settings = Object.assign(settings, c);
-        if (satKey(settings) !== before) {
-          map.removeLayer('sat'); map.removeSource('sat');
-          map.addSource('sat', satSource(settings));
-          map.addLayer({ id: 'sat', type: 'raster', source: 'sat', minzoom: 4, paint: { 'raster-opacity': ['interpolate', ['linear'], ['zoom'], 4, 0, 6.5, 1] } }, 'shade');
-        }
-        map.setLayoutProperty('sat', 'visibility', settings.satellite ? 'visible' : 'none');
-        document.body.classList.toggle('nopeaks', settings.peakLabels === false);
-        if (terrainOn) map.setTerrain({ source: 'dem', exaggeration: settings.exaggeration });
-        break;
+      case 'settings': applySettings(c); break;
+      case 'snap': snapshot(c); break;
     }
   }
 
@@ -198,6 +235,7 @@
     map.setSky({ 'sky-color': '#8fb0cf', 'horizon-color': '#dfe6ec', 'fog-color': '#dfe6ec', 'sky-horizon-blend': 0.6,
                  'horizon-fog-blend': 0.7, 'fog-ground-blend': 0.85, 'atmosphere-blend': 0.6 });
     document.body.classList.add('lowzoom');
+    if (SNAP) { settings.auto3d = false; map.setPaintProperty('sat', 'raster-fade-duration', 0); }
     ready = true;
     queue.splice(0).forEach(handle);
     send({ type: 'ready' });
