@@ -4,27 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>HikeJournal</title>
-<meta name="description" content="Osebni dnevnik vzponov: vsi tvoji pohodi kot oranžne črte na enem 3D zemljevidu, s slikami in opisi na tvojem Google Drive.">
+<meta name="description" content="Osebni dnevnik vzponov: vsi tvoji pohodi kot zelene črte na enem 3D zemljevidu, s slikami in opisi na tvojem Google Drive.">
 <meta property="og:title" content="HikeJournal">
 <meta property="og:description" content="Vsi tvoji pohodi na enem 3D zemljevidu.">
 <meta property="og:image" content="img/zemljevid.jpg">
 <meta name="theme-color" content="#14181b">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff5f0f'/%3E%3Cpath d='M5 24 13 11l4 6 3-4 7 11z' fill='%2314181b'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2322c55e'/%3E%3Cpath d='M5 24 13 11l4 6 3-4 7 11z' fill='%2314181b'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap">
 <style>
 :root{
   --bg:#f4f6f6; --surface:#fff; --surface-2:#e9edee; --ink:#14181b; --muted:#56616b; --line:#d9dfe2;
-  --accent:#ff5f0f; --accent-ink:#b93c06; --shadow:0 18px 50px rgba(20,24,27,.16);
+  --accent:#22c55e; --accent-ink:#15803d; --shadow:0 18px 50px rgba(20,24,27,.16);
   --f-display:'Barlow Condensed','Arial Narrow',system-ui,sans-serif; --f-body:'Barlow',system-ui,-apple-system,'Segoe UI',sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#101417; --surface:#1a2126; --surface-2:#242d33; --ink:#eef2f4; --muted:#a3afb8; --line:#2f3a41;
-  --accent:#ff6a1f; --accent-ink:#ff9a62; --shadow:0 18px 50px rgba(0,0,0,.5); color-scheme:dark}}
+  --accent:#4ade80; --accent-ink:#86efac; --shadow:0 18px 50px rgba(0,0,0,.5); color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#101417; --surface:#1a2126; --surface-2:#242d33; --ink:#eef2f4; --muted:#a3afb8; --line:#2f3a41;
-  --accent:#ff6a1f; --accent-ink:#ff9a62; --shadow:0 18px 50px rgba(0,0,0,.5); color-scheme:dark}
+  --accent:#4ade80; --accent-ink:#86efac; --shadow:0 18px 50px rgba(0,0,0,.5); color-scheme:dark}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55;overflow-x:hidden}
@@ -131,7 +131,7 @@ footer a{color:var(--muted)}
     <div class="hero-copy">
       <span class="eyebrow">Osebni dnevnik vzponov</span>
       <h1>Vsi tvoji vrhovi na <em>enem</em> zemljevidu</h1>
-      <p class="lead">Uvoziš GPX iz Strave in vsak pohod postane oranžna črta na 3D reliefu. Klikneš črto in vidiš datum, statistike, višinski profil, slike in opis tistega dne.</p>
+      <p class="lead">Uvoziš GPX iz Strave in vsak pohod postane zelena črta na 3D reliefu. Klikneš črto in vidiš datum, statistike, višinski profil, slike in opis tistega dne.</p>
       <div class="cta">
         <a class="btn accent" href="app/">Odpri aplikacijo
           <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -143,15 +143,15 @@ footer a{color:var(--muted)}
         <div><b>2868 m</b><span>najvišje · Triglav</span></div>
       </div>
     </div>
-    <div class="phone"><img src="img/telefon.jpg" width="390" height="844" alt="HikeJournal na telefonu: pot na Triglav v 3D in statistike pohoda"></div>
+    <div class="phone"><img src="img/telefon.jpg" width="780" height="1688" alt="HikeJournal na telefonu: pot na Triglav v 3D in statistike pohoda"></div>
   </div>
 
   <div class="wrap">
     <div class="browser">
       <div class="bar"><i></i><i></i><i></i><span>HikeJournal · Kamniško-Savinjske Alpe</span></div>
-      <img src="img/zemljevid.jpg" width="1440" height="900" alt="Pet pohodov po Kamniško-Savinjskih Alpah kot oranžne črte na 3D reliefu, ob strani seznam pohodov" loading="lazy">
+      <img src="img/zemljevid.jpg" width="1440" height="900" alt="Pohodi po Kamniško-Savinjskih Alpah kot zelene črte na 3D satelitskem reliefu, ob strani seznam pohodov" loading="lazy">
     </div>
-    <div class="shot-cap"><span>Pet pohodov iz Strave na enem zaslonu. Relief za Slovenijo je iz LiDAR podatkov GURS.</span><span>Oddaljeno 2D, od zooma 9 naprej 3D.</span></div>
+    <div class="shot-cap"><span>Vsi pohodi iz Strave na enem zaslonu. Relief za Slovenijo je iz LiDAR podatkov GURS.</span><span>Oddaljeno 2D, od zooma 9 naprej 3D.</span></div>
   </div>
 
   <section id="kako" class="wrap">

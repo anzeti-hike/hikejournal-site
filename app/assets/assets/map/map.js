@@ -8,7 +8,7 @@
  */
 (function () {
   'use strict';
-  var ACCENT = '#ff5f0f';
+  var ACCENT = '#22c55e';
   var WORLD = { center: [14.5, 38], zoom: innerWidth < 700 ? 0.6 : 1.6, pitch: 0, bearing: 0 };
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   var dur = function (ms) { return reduce ? 0 : ms; };

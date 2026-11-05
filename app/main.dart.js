@@ -16155,17 +16155,17 @@ e=f
 k=e
 i=k}if(h==null)h=n?B.EA:B.ie
 d=A.Us(h)
-c=n?B.F6:B.o6
-b=n?B.l:B.o9
+c=n?B.F6:B.o7
+b=n?B.l:B.oa
 a=d===B.am
 a0=n?A.al(31,B.k.v()>>>16&255,B.k.v()>>>8&255,B.k.v()&255):A.al(31,B.l.v()>>>16&255,B.l.v()>>>8&255,B.l.v()&255)
 a1=n?A.al(10,B.k.v()>>>16&255,B.k.v()>>>8&255,B.k.v()&255):A.al(10,B.l.v()>>>16&255,B.l.v()>>>8&255,B.l.v()&255)
-if(k==null)k=n?B.o2:B.ES
+if(k==null)k=n?B.o3:B.ES
 if(d2==null)d2=k
 if(e==null)e=n?B.cY:B.k
 if(j==null)j=n?B.F3:B.ET
-if(d1==null){a2=n?B.Ew:B.nR
-p=n?B.eA:B.nW
+if(d1==null){a2=n?B.Ew:B.nS
+p=n?B.eA:B.nX
 a3=A.Us(B.ie)===B.am
 a4=A.Us(a2)
 a5=a3?B.k:B.l
@@ -16175,10 +16175,10 @@ a7=n?B.l:B.k
 d1=A.a8w(p,o,B.Ey,c6,c6,c6,a3?B.k:B.l,a7,c6,c6,a5,c6,c6,c6,a4,c6,c6,c6,a6,c6,c6,c6,c6,c6,c6,c6,B.ie,c6,c6,c6,c6,a2,c6,c6,c6,c6,e,c6,c6,c6,c6,c6,c6,c6,c6,c6,c6,c6,c6,c6)}a8=n?B.W:B.P
 a9=n?B.eA:B.nH
 b0=n?B.F5:A.al(153,B.l.v()>>>16&255,B.l.v()>>>8&255,B.l.v()&255)
-b1=new A.N0(n?B.o1:B.EV,c6,a0,a1,c6,c6,d1,s)
+b1=new A.N0(n?B.o2:B.EV,c6,a0,a1,c6,c6,d1,s)
 b2=n?B.F4:B.EZ
-b3=n?B.o_:B.k5
-b4=n?B.o_:B.Et
+b3=n?B.o0:B.k5
+b4=n?B.o0:B.Et
 if(d3){b5=A.aQU(c9,c6,c6,B.Xz,B.XH,B.XJ)
 p=d1.a===B.ai
 b6=p?d1.k3:d1.k2
@@ -23460,7 +23460,7 @@ if(a.as!==q)return q?-1:1
 return 0},
 b_d(a,b){var s=A.a2(b).i("a4<1,e6>")
 s=A.a3(new A.a4(b,new A.abb(),s),s.i("aw.E"))
-return A.aZs(!0,s,a,B.KK,!0,B.FY,null)},
+return A.aZs(!0,s,a,B.KJ,!0,B.FY,null)},
 aIM(a){var s
 try{a.el()}catch(s){a.T9()}a.w=B.a_z
 try{a.bo(A.b8W())}catch(s){}},
@@ -24031,7 +24031,7 @@ _.as=!0
 _.at=!1
 _.$ti=d},
 aeX(a,b){var s
-if(a.j(0,b))return new A.N2(B.KM)
+if(a.j(0,b))return new A.N2(B.KL)
 s=A.b([],t.fJ)
 A.cx()
 a.oK(new A.aeY(b,A.aK(t.u),s))
@@ -27562,7 +27562,7 @@ k.push(a0)}if(l.length<2)throw A.e(A.aJ0("Sled ima premalo veljavnih to\u010dk."
 A.b6s(l)
 a5=A.r6(new A.aM(new A.c6(new A.nd(a8),s),new A.aHj(),o))
 s=a5==null?a7:new A.c6(a5.o7$.a,s)
-s=J.b5(s==null?B.KQ:s)
+s=J.b5(s==null?B.KP:s)
 a6=a7
 while(s.u()){o=s.gK(s)
 n=o.b.a
@@ -31906,7 +31906,7 @@ yQ(){var s=this.as
 s===$&&A.a()
 return s},
 yR(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.KX
+if(a<0||b<0)return B.KW
 s=this.a
 s===$&&A.a()
 s=s.a
@@ -32171,7 +32171,7 @@ j(a,b){if(b==null)return!1
 if(!(b instanceof A.BA))return!1
 return b.d===this.d&&b.b==this.b&&A.hm(b.c,this.c)},
 gD(a){var s=this,r=s.c
-return A.S(s.d,s.a,s.b,A.bA(r==null?B.KL:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+return A.S(s.d,s.a,s.b,A.bA(r==null?B.KK:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 $iic:1}
 A.Ao.prototype={
 Zh(a,b){var s=this.Sv(a),r=A.b6(new A.a7Q(this,b,s))
@@ -37628,7 +37628,7 @@ if(r.f!==B.oX){r.f=B.oX
 r.Vi()}}return r.d.a.a61(a)},
 Vi(){var s,r
 for(s=this.w,r=0;r<s.length;++r)s[r].$1(this.f)},
-a60(a){if(B.b.p(B.KE,a))return this.f===B.hS
+a60(a){if(B.b.p(B.KD,a))return this.f===B.hS
 return!1}}
 A.abL.prototype={
 $0(){return new A.cY(Date.now(),0,!1)},
@@ -44910,7 +44910,7 @@ if(s==null||s.length<b)s=this.c=new Uint8Array(b)
 return J.iM(B.q.gaO(s),s.byteOffset,b)}}
 A.aug.prototype={
 C(a,b){this.A0(0,b,0,J.c3(b),!1)},
-aV(a){this.A0(0,B.KI,0,0,!0)},
+aV(a){this.A0(0,B.KH,0,0,!0)},
 dU(a,b,c,d){A.dz(b,c,a.length,null,null)
 this.A0(0,a,b,c,d)}}
 A.au3.prototype={
@@ -62510,7 +62510,7 @@ gEF(){return 14},
 gaaH(){return 48},
 gaaI(){return 40},
 gR_(){return 52},
-gF_(){return B.KU},
+gF_(){return B.KT},
 guK(){return 32},
 guM(){return 52},
 gF8(){return B.Sn},
@@ -66018,7 +66018,7 @@ return new A.o8(r.a.cX(s.gj3()),r.b,r.c)},
 da(a){var s=this.b
 return s.a.c.da(a.R(0,s.gj3()))},
 ty(){var s,r,q=this.b,p=q.gj3()
-if(!isFinite(p.a)||!isFinite(p.b))return B.KY
+if(!isFinite(p.a)||!isFinite(p.b))return B.KX
 s=q.f
 if(s==null){s=q.a.c.ty()
 q.f=s}if(p.j(0,B.f))r=s
@@ -70458,9 +70458,9 @@ k=g
 j=f.b
 k=j
 i=l
-h.b7=A.aJ1(new A.k(i,0),new A.k(k,0),A.b([B.k,B.nM],t.t_),g,B.cJ,g)}else{k=h.gA(0).b
+h.b7=A.aJ1(new A.k(i,0),new A.k(k,0),A.b([B.k,B.nN],t.t_),g,B.cJ,g)}else{k=h.gA(0).b
 f=m.b.a.c
-h.b7=A.aJ1(new A.k(0,k-f.gb8(f)/2),new A.k(0,k),A.b([B.k,B.nM],t.t_),g,B.cJ,g)}m.l()
+h.b7=A.aJ1(new A.k(0,k-f.gb8(f)/2),new A.k(0,k),A.b([B.k,B.nN],t.t_),g,B.cJ,g)}m.l()
 break}else{h.aK=!1
 h.b7=null}},
 dd(a,b){this.a_Q(a,b)},
@@ -75751,7 +75751,7 @@ break
 case 1:return A.r(q,r)}})
 return A.t($async$Im,r)},
 afs(a,b){var s,r,q,p
-if(a===b)return B.KW
+if(a===b)return B.KV
 s=A.b([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.ep(B.eZ,a)
@@ -77826,7 +77826,7 @@ A.mH.prototype={}
 A.RN.prototype={
 mM(a,b,c){var s,r,q,p,o,n=$.a6.ai$.d.c
 if(n==null||n.e==null)return!1
-for(s=t.B,r=0;r<2;++r){q=B.KF[r]
+for(s=t.B,r=0;r<2;++r){q=B.KE[r]
 p=n.e
 p.toString
 o=A.aIb(p,q,s)
@@ -78065,7 +78065,7 @@ r=n.gajW()
 q=n.a
 q=q.ch
 q.toString
-l.a=A.b_G(!0,A.aP8(B.z,r,s,q,A.aU0(),n.galx(),m,n.gam2(),B.KR,!0,"nav",B.YH),"Navigator Scope",!0,m,m,m,m)}else n.a.toString
+l.a=A.b_G(!0,A.aP8(B.z,r,s,q,A.aU0(),n.galx(),m,n.gam2(),B.KQ,!0,"nav",B.YH),"Navigator Scope",!0,m,m,m,m)}else n.a.toString
 l.b=null
 s=n.a
 s.toString
@@ -80369,7 +80369,7 @@ h.Kf()
 r=h.gage()
 q=q.xw
 h.e!==$&&A.aQ()
-h.e=new A.Tb(f,new A.cj(B.MR,l),new A.rl(),p,B.cj,0,k,h.gaiG(),h.gaiI(),r,B.cj,0,j,h.gaiA(),h.gaiC(),r,i,B.KN,s,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.ND(),new A.ND())
+h.e=new A.Tb(f,new A.cj(B.MR,l),new A.rl(),p,B.cj,0,k,h.gaiG(),h.gaiI(),r,B.cj,0,j,h.gaiA(),h.gaiC(),r,i,B.KM,s,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.ND(),new A.ND())
 return h},
 Aa(a,b){var s,r,q,p=this,o=p.a.c,n=o.a.a.length
 if(n<a.b||n<a.a)return
@@ -83532,7 +83532,7 @@ j(a,b){var s=this
 if(b==null)return!1
 if(J.U(b)!==A.B(s))return!1
 return b instanceof A.dm&&b.a===s.a&&b.b==s.b&&b.d===s.d&&A.cF(null,null)},
-gD(a){return A.S(this.a,this.b,null,this.d,A.bA(B.KJ),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+gD(a){return A.S(this.a,this.b,null,this.d,A.bA(B.KI),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){return"IconData(U+"+B.c.kx(B.e.j7(this.a,16).toUpperCase(),5,"0")+")"}}
 A.r3.prototype={
 cs(a){return!this.w.j(0,a.w)},
@@ -84951,7 +84951,7 @@ b=r?a1:a3.fr
 if(b==null)b=a2.b.c.z
 a3=r?a1:a3.fx
 if(a3==null)a3=a2.b.c.Q
-a=new A.D4(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.vl(a1),B.KV,e===!0,d,c,b,a3,A.b0O(a2))
+a=new A.D4(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.vl(a1),B.KU,e===!0,d,c,b,a3,A.b0O(a2))
 if(!a.j(0,a0.e))a0.al(new A.azb(a0,a))},
 CP(){if(this.d==null)this.tf()},
 LL(){this.tf()},
@@ -91370,7 +91370,7 @@ r.BA()
 return s.bd()},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gIo(),p=0;p<s.length;s.length===r||(0,A.F)(s),++p)s[p].I(0,q)
-o.b=B.KO
+o.b=B.KN
 o.y=!1
 o.dI()},
 eA(a,b){return a.nZ(b)},
@@ -92590,7 +92590,7 @@ if(f==null)f=b.Q
 e=A.a9i(a)
 k=a.ar(k)
 k=(k==null?B.dD:k).x
-if(k==null)k=B.nU
+if(k==null)k=B.nV
 l.b=A.l2(new A.JL(n,i,h,b.y,g,r,f,c,c,b.as,e,k,c),j,c,c,c,c)
 r=h}else{k=d.r
 if(k==null)k=b.x
@@ -92604,7 +92604,7 @@ if(h==null)h=b.Q
 g=A.a9i(a)
 f=a.ar(t.Uf)
 f=(f==null?B.dD:f).x
-if(f==null)f=B.nU
+if(f==null)f=B.nV
 l.b=A.aJI(c,c,h,i,f,c,b.y,c,n,k,j,g,r,b.as)
 r=j}k=d.ax
 if(k!=null)l.b=A.ci(c,c,new A.nY(!0,l.bd(),c),!1,c,c,!1,c,c,c,c,c,c,c,c,c,k,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,r,c,c,c,c)
@@ -95127,7 +95127,7 @@ o=p.b
 n=t.N
 m=t.X
 o.k5(A.K(["cmd","select","id",b],n,m))
-o.PR(B.KP)
+o.PR(B.KO)
 p.W()
 if(b==null){s=1
 break}l=p.gva(0)
@@ -95707,7 +95707,7 @@ A.C9.prototype={
 ah(){var s="https://hikejournal.josovc-anze.workers.dev",r=A.qy(0,0,!1),q=new A.apf(B.c.lc(s,"/")?B.c.T(s,0,42):s),p=$.at(),o=t.N,n=t.iI
 return new A.Yk(new A.zY(new A.C4(new A.cY(r,0,!1),q,p),new A.Pn(A.b([],t.CF)),B.fc,new A.D6(A.x(o,n),A.x(o,t.Ar)),A.b([],t.qX),A.b([],t.cg),A.x(o,n),p))}}
 A.Yk.prototype={
-J(a){var s,r,q=this,p=null,o=A.xs(p,A.aNg(B.ai,p,B.bm,B.cu,B.cu,B.k),B.EQ,!0),n=o.ok.asG(B.bm,B.bm),m=A.aIT(B.bm,B.k,B.Ax,new A.d9(A.eQ(12),B.v),p,B.Ba),l=A.aPh(p,p,p,p,p,p,p,p,p,B.bm,p,B.Ax,p,p,new A.d9(A.eQ(12),B.v),B.jH,p,p,B.Ba,p)
+J(a){var s,r,q=this,p=null,o=A.xs(p,A.aNg(B.ai,p,B.bm,B.cu,B.cu,B.k),B.EQ,!0),n=o.ok.asG(B.bm,B.bm),m=A.aIT(B.bm,B.k,B.Ax,new A.d9(A.eQ(12),B.v),p,B.Bb),l=A.aPh(p,p,p,p,p,p,p,p,p,B.bm,p,B.Ax,p,p,new A.d9(A.eQ(12),B.v),B.jH,p,p,B.Bb,p)
 n=o.av8(new A.vz(m),A.aOr(new A.im(4,A.eQ(12),B.jH),p,p,new A.im(4,A.eQ(12),B.jH),B.k,!0,!0),new A.wm(l),n)
 s=q.e
 if(s===$){r=q.d.fq()
@@ -96779,14 +96779,14 @@ m=""+n+"/"+B.d.an(m)
 n=m}l=[new A.a7(g+" km","razdalja"),new A.a7(s,"vzpon"),new A.a7(r,q),new A.a7(p,"skupaj"),new A.a7(o,"v gibanju"),new A.a7(n,"utrip \xd8/max")]
 g=e.w
 s=e.x
-r=A.cQ(A.aTy(g,s).toUpperCase(),h,h,h,B.Bb,h,h)
+r=A.cQ(A.aTy(g,s).toUpperCase(),h,h,h,B.B9,h,h)
 q=A.FW(i.geH(0),B.In,h,h,new A.axf(i),B.X4)
 p=t.p
 o=A.hL(A.b([A.o_(A.FW(i.gbF(0),B.Im,1,h,new A.axg(i),h),1),B.AB,A.o_(A.FW(i.gNU(),B.Io,1,h,new A.axh(i),h),1)],p),B.ad,B.R,B.ae,0)
 n=A.b([],p)
 for(k=0;k<6;++k){m=l[k]
 j=new A.aF(12,12)
-n.push(A.iR(h,A.i1(A.b([new A.OS(A.cQ(m.a,h,h,h,B.Bd,h,h),h),A.cQ(m.b,h,h,h,B.ec,h,h)],p),B.b5,B.vp,B.ae),B.z,h,h,new A.eg(B.jZ,h,h,new A.cy(j,j,j,j),h,h,B.bd),h,h,h,B.ov,h,h,h))}r=A.b([new A.hZ(B.eq,h,h,new A.FP(!0,new A.axi(d),h,h,h,h,B.z,h,!1,h,!0,h,new A.a2k(B.Y9,B.HV,h,h,h),h),h),r,q,B.fx,o,B.ea,A.aOf(1.9,n,3,6,6,B.vN,!0),B.ea,A.OQ(B.XQ,new A.axj(d,f),h),B.fv,B.Y6,B.fx,new A.RO(f.z,f.w,h)],p)
+n.push(A.iR(h,A.i1(A.b([new A.OS(A.cQ(m.a,h,h,h,B.Bd,h,h),h),A.cQ(m.b,h,h,h,B.ec,h,h)],p),B.b5,B.vp,B.ae),B.z,h,h,new A.eg(B.jZ,h,h,new A.cy(j,j,j,j),h,h,B.bd),h,h,h,B.ov,h,h,h))}r=A.b([new A.hZ(B.eq,h,h,new A.FP(!0,new A.axi(d),h,h,h,h,B.z,h,!1,h,!0,h,new A.a2k(B.Y9,B.HV,h,h,h),h),h),r,q,B.fx,o,B.ea,A.aOf(1.9,n,3,6,6,B.vN,!0),B.ea,A.OQ(B.XQ,new A.axj(d,f),h),B.fv,B.Y5,B.fx,new A.RO(f.z,f.w,h)],p)
 if(g!=null){g=A.aL8(g)
 q=f.r
 q=q!=null?" \xb7 "+q:""
@@ -96794,7 +96794,7 @@ q=i.Jw(g,"Start"+q+" ("+A.uv(e.f)+")")
 g=A.aL8(e.y)
 o=f.w
 o=o!=null?"Vrh \xb7 "+o:"Najvi\u0161ja to\u010dka"
-B.b.N(r,A.b([B.fv,B.Y5,B.fw,q,i.Jw(g,o+" (GPS "+A.uv(e.d)+")"),i.Jw(A.aL8(s),"Cilj ("+A.uv(e.r)+")")],p))}r.push(B.fv)
+B.b.N(r,A.b([B.fv,B.Y4,B.fw,q,i.Jw(g,o+" (GPS "+A.uv(e.d)+")"),i.Jw(A.aL8(s),"Cilj ("+A.uv(e.r)+")")],p))}r.push(B.fv)
 r.push(B.Yt)
 r.push(B.fx)
 r.push(new A.QG(d,h))
@@ -96804,7 +96804,7 @@ r.push(B.fv)
 r.push(A.FW(i.gLF(),B.Il,10,4,new A.axk(i),h))
 r.push(B.fv)
 g=A.b([],p)
-if(i.x)B.b.N(g,A.b([A.OQ(B.Y4,new A.axl(d,f),A.aIT(B.F2,h,h,h,h,h)),A.ajD(B.Y7,new A.axm(i),h)],p))
+if(i.x)B.b.N(g,A.b([A.OQ(B.Y3,new A.axl(d,f),A.aIT(B.F2,h,h,h,h,h)),A.ajD(B.Y6,new A.axm(i),h)],p))
 else g.push(new A.Dz(!0,new A.axn(i),h,h,h,h,h,h,!1,h,!0,h,new A.a__(B.Yg,B.p1,h,h,h),h))
 r.push(new A.V8(8,8,g,h))
 r.push(B.bX)
@@ -96864,7 +96864,7 @@ J(a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=null,a=this.a.c
 if(a.r&&J.eN(a.f))return B.OV
 if(J.eN(a.f)){s=A.X(a0).ok.r
 s=A.cQ("\u0160e ni pohodov",b,b,b,s==null?b:s.auh(B.cB),b,b)
-return A.i1(A.b([s,B.bX,B.Yq,B.Sv,A.ac8(B.HS,B.XT,a.at?b:new A.axv(a),b)],t.p),B.b5,B.R,B.ae)}r=B.c.f9(this.d).toLowerCase()
+return A.i1(A.b([s,B.bX,B.Yp,B.Sv,A.ac8(B.HS,B.XS,a.at?b:new A.axv(a),b)],t.p),B.b5,B.R,B.ae)}r=B.c.f9(this.d).toLowerCase()
 q=a.f
 if(!(r.length===0)){s=J.uD(q,new A.axw(r))
 q=A.a3(s,s.$ti.i("o.E"))}s=t.p
@@ -96883,7 +96883,7 @@ d=B.d.a8(f.a,1)
 d=A.bj(d,".",",")
 c=m.x
 f=c==null?B.d.an(f.d):c
-p.push(new A.d7(B.Gw,new A.wa(A.vR(!1,new A.cy(i,i,i,i),!0,new A.d7(B.GC,A.hL(A.b([h,B.mk,new A.nZ(1,B.dM,A.i1(A.b([g,A.cQ(e+" \xb7 "+(d+" km")+" \xb7 "+f+" m",b,b,b,B.B9,b,b)],s),B.b5,B.R,B.ae),b)],s),B.ad,B.R,B.ae,0),b),b,!0,b,b,b,b,b,b,b,b,new A.axy(a,m),b,b,b,b),B.cb,!1,0,B.k,b,b,b,new A.d9(new A.cy(l,l,l,l),new A.b7(j,k,B.y,-1)),!0,B.z,B.Q,b,b),b))}if(o.ga0(q))p.push(B.Yj)
+p.push(new A.d7(B.Gw,new A.wa(A.vR(!1,new A.cy(i,i,i,i),!0,new A.d7(B.GC,A.hL(A.b([h,B.mk,new A.nZ(1,B.dM,A.i1(A.b([g,A.cQ(e+" \xb7 "+(d+" km")+" \xb7 "+f+" m",b,b,b,B.Ba,b,b)],s),B.b5,B.R,B.ae),b)],s),B.ad,B.R,B.ae,0),b),b,!0,b,b,b,b,b,b,b,b,new A.axy(a,m),b,b,b,b),B.cb,!1,0,B.k,b,b,b,new A.d9(new A.cy(l,l,l,l),new A.b7(j,k,B.y,-1)),!0,B.z,B.Q,b,b),b))}if(o.ga0(q))p.push(B.Yj)
 return A.i1(p,B.cv,B.R,B.ae)}}
 A.axv.prototype={
 $0(){var s=0,r=A.u(t.H),q,p=this,o
@@ -96954,7 +96954,7 @@ p=A.aJ6(A.Cf(n,d,d),d,new A.axJ(e,a),p)
 if(o.d===B.lC)o="Preizkusni na\u010din \u2014 podatki se ne shranijo"
 else o=J.eN(o.f)?"Osebni dnevnik vzponov":""+J.c3(e.a.c.f)+" "+A.aU9(J.c3(e.a.c.f))+" \xb7 najvi\u0161je "+m+" m"
 n=t.p
-o=A.b([p,B.mk,A.o_(A.i1(A.b([B.Ys,A.cQ(o,1,B.aD,d,A.iy(d,d,e.a.c.d===B.lC?B.od:B.c5,d,d,d,d,d,d,d,d,12,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],n),B.b5,B.R,B.bU),1)],n)
+o=A.b([p,B.mk,A.o_(A.i1(A.b([B.Ys,A.cQ(o,1,B.aD,d,A.iy(d,d,e.a.c.d===B.lC?B.nL:B.c5,d,d,d,d,d,d,d,d,12,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],n),B.b5,B.R,B.bU),1)],n)
 if(s){s=e.a.c.y
 p=s?B.cu:B.jZ
 i=A.eQ(99)
@@ -97053,7 +97053,7 @@ A.CV.prototype={
 ah(){return new A.Zf()}}
 A.Zf.prototype={
 J(a){var s=null,r=t.p,q=A.hL(A.b([A.iR(s,B.HX,B.z,s,s,new A.eg(B.cu,s,s,A.eQ(12),s,s,B.bd),s,44,s,s,s,s,44),B.St,B.GY],r),B.b5,B.R,B.ae,0),p=this.d,o=p?s:new A.ayP(this)
-return A.aJL(s,s,A.hs(A.aQ8(new A.fn(B.Cv,new A.oA(A.i1(A.b([q,B.Sw,A.ac8(B.HN,A.cQ(p?"Po\u010dakaj \u2026":"Prijava z Google",s,s,s,s,s,s),o,s),B.ea,B.Y1,B.fx,A.FQ(B.Y2,this.a.c.ga6n(),s)],r),B.cv,B.R,B.ae),B.GL,B.n7,s),s),B.kp),s,s))}}
+return A.aJL(s,s,A.hs(A.aQ8(new A.fn(B.Cv,new A.oA(A.i1(A.b([q,B.Sw,A.ac8(B.HN,A.cQ(p?"Po\u010dakaj \u2026":"Prijava z Google",s,s,s,s,s,s),o,s),B.ea,B.Y0,B.fx,A.FQ(B.Y1,this.a.c.ga6n(),s)],r),B.cv,B.R,B.ae),B.GL,B.n7,s),s),B.kp),s,s))}}
 A.ayP.prototype={
 $0(){var s=0,r=A.u(t.H),q=this,p
 var $async$$0=A.v(function(a,b){if(a===1)return A.q(b,r)
@@ -97165,7 +97165,7 @@ o=A.cQ(q.a.d.d+n,p,p,p,B.Uw,p,p)
 s=t.p
 r=A.b([],s)
 if(q.a.d.Q!=null)r.push(A.PM(p,p,B.HO,p,p,new A.azk(q),p,p,"Odpri v Google Drive"))
-if(q.w)B.b.N(r,A.b([A.FQ(B.XV,new A.azl(q,a),p),A.FQ(B.Y0,new A.azm(q),p)],s))
+if(q.w)B.b.N(r,A.b([A.FQ(B.XU,new A.azl(q,a),p),A.FQ(B.Y_,new A.azm(q),p)],s))
 else r.push(A.PM(p,p,B.p1,p,p,new A.azn(q),p,p,"Izbri\u0161i"))
 return A.aJL(new A.zW(o,r,B.C,B.k,new A.a_O(p,p,1/0,56),p),B.Ez,A.hs(q.ac3(0),p,p))},
 ac3(a){var s,r=this,q=null,p=r.f
@@ -97331,9 +97331,9 @@ s.U$=0
 this.aC()},
 J(a){var s,r=this,q=null,p=r.a.c,o=A.eQ(20),n=t.p,m=A.b([A.hL(A.b([B.GX,A.PM(q,q,B.HU,q,q,new A.aCS(a),q,q,"Zapri")],n),B.ad,B.R,B.ae,0),B.bX,B.Yc,B.fx],n)
 if(p.d===B.bV){s=p.a.c
-B.b.N(m,A.b([A.cQ("Povezan kot "+(s==null?"\u2014":s)+". Pohodi, GPX, slike in videi so v mapi HikeJournal na tvojem Google Drive.",q,q,q,B.ms,q,q),B.bX,new A.hZ(B.eq,q,q,A.ajD(B.XX,new A.aCT(a,p),q),q)],n))}else B.b.N(m,A.b([B.Yx,B.bX,new A.hZ(B.eq,q,q,A.OQ(B.Yu,new A.aCU(a,p),q),q)],n))
+B.b.N(m,A.b([A.cQ("Povezan kot "+(s==null?"\u2014":s)+". Pohodi, GPX, slike in videi so v mapi HikeJournal na tvojem Google Drive.",q,q,q,B.ms,q,q),B.bX,new A.hZ(B.eq,q,q,A.ajD(B.XW,new A.aCT(a,p),q),q)],n))}else B.b.N(m,A.b([B.Yx,B.bX,new A.hZ(B.eq,q,q,A.OQ(B.Yu,new A.aCU(a,p),q),q)],n))
 m.push(B.G0)
-m.push(B.XY)
+m.push(B.XX)
 if(p.d===B.bV)m.push(B.OU)
 m.push(B.bX)
 m.push(B.Ym)
@@ -97342,7 +97342,7 @@ s===$&&A.a()
 m.push(new A.wE(s.b,new A.aCV(r),B.Fi,q,t.eY))
 s=r.a.c.c
 s===$&&A.a()
-if(s.b==="maptiler")B.b.N(m,A.b([B.fw,A.hL(A.b([A.o_(A.FW(r.gom(0),B.Ip,1,q,q,q),1),B.AB,A.OQ(B.Yl,new A.aCW(r),q)],n),B.ad,B.R,B.ae,0),A.FQ(B.XZ,new A.aCX(),q)],n))
+if(s.b==="maptiler")B.b.N(m,A.b([B.fw,A.hL(A.b([A.o_(A.FW(r.gom(0),B.Ip,1,q,q,q),1),B.AB,A.OQ(B.Yl,new A.aCW(r),q)],n),B.ad,B.R,B.ae,0),A.FQ(B.XY,new A.aCX(),q)],n))
 m.push(B.bX)
 n=r.a.c.c
 n===$&&A.a()
@@ -97356,12 +97356,12 @@ n===$&&A.a()
 m.push(A.aJY(B.aw,new A.aCZ(r),B.Yi,n.d))
 n=r.a.c.c
 n===$&&A.a()
-m.push(A.aJY(B.aw,new A.aD_(r),B.Yp,n.e))
+m.push(A.aJY(B.aw,new A.aD_(r),B.Yq,n.e))
 n=r.a.c.c
 n===$&&A.a()
-m.push(A.aJY(B.aw,new A.aD0(r),B.XU,n.f))
+m.push(A.aJY(B.aw,new A.aD0(r),B.XT,n.f))
 m.push(B.bX)
-m.push(B.Y_)
+m.push(B.XZ)
 n=A.aQk(m,!0,!0,!0)
 m=m.length
 return new A.O6(B.kp,new A.d9(o,B.v),new A.fn(B.Cs,new A.Qo(n,B.GI,B.av,!1,q,q,B.BZ,!0,q,q,m,B.ao,q,q,B.a_,B.ay,q),q),q)}}
@@ -98651,7 +98651,7 @@ $idv:1}
 A.as.prototype={
 be(a,b){var s=this.bc(new A.qt(a,b))
 return s instanceof A.bx?-1:s.b},
-gdW(a){return B.KT},
+gdW(a){return B.KS},
 jS(a,b,c){},
 k(a){return A.B(this).k(0)}}
 A.SE.prototype={}
@@ -100890,9 +100890,9 @@ if(q)p=0
 else{l=l.e
 p=new A.a4(l,new A.aEV(),A.a2(l).i("a4<1,m>")).mD(0,0,B.jK)/s}this.a.toString
 l=t.ZU
-o=A.aJg(B.ob,p,new A.q9(B.EO,l))
+o=A.aJg(B.oc,p,new A.q9(B.EO,l))
 q=q?0:r/s
-n=A.lk(B.cP,A.b([o,A.aJg(B.C,q,new A.q9(B.nQ,l))],t.p),B.a_,B.AG)}else n=A.aJg(B.ob,null,new A.q9(B.nQ,t.ZU))
+n=A.lk(B.cP,A.b([o,A.aJg(B.C,q,new A.q9(B.nR,l))],t.p),B.a_,B.AG)}else n=A.aJg(B.oc,null,new A.q9(B.nR,t.ZU))
 m=new A.d7(B.GA,n,null)
 l=this.a.c
 return new A.Gx(m,l,null)}}
@@ -101298,7 +101298,7 @@ A.atu.prototype={
 $1(a){return a.gn(a)},
 $S:639}
 A.at1.prototype={
-gpI(a){return B.KS}}
+gpI(a){return B.KR}}
 A.Vn.prototype={
 P7(a,b){var s,r,q,p=A.b8v(a,null)
 for(s=this.gpI(this).a,r=A.a2(s),s=new J.cM(s,s.length,r.i("cM<1>")),r=r.c;s.u();){q=s.d
@@ -104962,7 +104962,7 @@ B.Cu=new A.ar(280,1/0,0,1/0)
 B.na=new A.ar(36,1/0,36,1/0)
 B.Cv=new A.ar(0,420,0,1/0)
 B.fV=new A.ar(1/0,1/0,1/0,1/0)
-B.cu=new A.O(1,1,0.37254901960784315,0.058823529411764705,B.h)
+B.cu=new A.O(1,0.13333333333333333,0.7725490196078432,0.3686274509803922,B.h)
 B.fX=new A.MW(1,"circle")
 B.Cw=new A.eg(B.cu,null,null,null,null,null,B.fX)
 B.nb=new A.Af(1,"contain")
@@ -105220,12 +105220,12 @@ B.nw=new A.pk()
 B.DO=new A.as2()
 B.O=new A.UO()
 B.bs=new A.UP()
-B.nQ=new A.O(0.7,1,0,0,B.h)
+B.nR=new A.O(0.7,1,0,0,B.h)
 B.EO=new A.O(0.2,0.19607843137254902,0.19607843137254902,0.7843137254901961,B.h)
-B.ob=new A.O(0.5,0.7843137254901961,0.7843137254901961,0.7843137254901961,B.h)
+B.oc=new A.O(0.5,0.7843137254901961,0.7843137254901961,0.7843137254901961,B.h)
 B.a12=new A.asr()
 B.ef=new A.UW(0,0,0,0)
-B.KV=s([],A.ay("D<a9G>"))
+B.KU=s([],A.ay("D<a9G>"))
 B.a13=new A.ast()
 B.DP=new A.UZ()
 B.aY={}
@@ -105314,20 +105314,20 @@ B.k=new A.O(1,1,1,1,B.h)
 B.hf=new A.O(1,0.9176470588235294,0.8666666666666667,1,B.h)
 B.ho=new A.O(1,0.30980392156862746,0.21568627450980393,0.5450980392156862,B.h)
 B.eC=new A.O(1,0.8156862745098039,0.7372549019607844,1,B.h)
-B.oa=new A.O(1,0.12941176470588237,0,0.36470588235294116,B.h)
+B.ob=new A.O(1,0.12941176470588237,0,0.36470588235294116,B.h)
 B.El=new A.O(1,0.3843137254901961,0.3568627450980392,0.44313725490196076,B.h)
 B.hm=new A.O(1,0.9098039215686274,0.8705882352941177,0.9725490196078431,B.h)
 B.hk=new A.O(1,0.2901960784313726,0.26666666666666666,0.34509803921568627,B.h)
 B.k2=new A.O(1,0.8,0.7607843137254902,0.8627450980392157,B.h)
-B.nO=new A.O(1,0.11372549019607843,0.09803921568627451,0.16862745098039217,B.h)
+B.nP=new A.O(1,0.11372549019607843,0.09803921568627451,0.16862745098039217,B.h)
 B.EK=new A.O(1,0.49019607843137253,0.3215686274509804,0.3764705882352941,B.h)
 B.hc=new A.O(1,1,0.8470588235294118,0.8941176470588236,B.h)
 B.hb=new A.O(1,0.38823529411764707,0.23137254901960785,0.2823529411764706,B.h)
 B.k0=new A.O(1,0.9372549019607843,0.7215686274509804,0.7843137254901961,B.h)
-B.nV=new A.O(1,0.19215686274509805,0.06666666666666667,0.11372549019607843,B.h)
+B.nW=new A.O(1,0.19215686274509805,0.06666666666666667,0.11372549019607843,B.h)
 B.EN=new A.O(1,0.7019607843137254,0.14901960784313725,0.11764705882352941,B.h)
-B.nS=new A.O(1,0.9764705882352941,0.8705882352941177,0.8627450980392157,B.h)
-B.o4=new A.O(1,0.5490196078431373,0.11372549019607843,0.09411764705882353,B.h)
+B.nT=new A.O(1,0.9764705882352941,0.8705882352941177,0.8627450980392157,B.h)
+B.o5=new A.O(1,0.5490196078431373,0.11372549019607843,0.09411764705882353,B.h)
 B.k9=new A.O(1,0.996078431372549,0.9686274509803922,1,B.h)
 B.jY=new A.O(1,0.11372549019607843,0.10588235294117647,0.12549019607843137,B.h)
 B.EM=new A.O(1,0.9058823529411765,0.8784313725490196,0.9254901960784314,B.h)
@@ -105341,7 +105341,7 @@ B.Eq=new A.O(1,0.4745098039215686,0.4549019607843137,0.49411764705882355,B.h)
 B.nJ=new A.O(1,0.792156862745098,0.7686274509803922,0.8156862745098039,B.h)
 B.oe=new A.O(1,0.19607843137254902,0.1843137254901961,0.20784313725490197,B.h)
 B.EH=new A.O(1,0.9607843137254902,0.9372549019607843,0.9686274509803922,B.h)
-B.Ej=new A.v9(B.ai,B.k4,B.k,B.hf,B.ho,B.hf,B.eC,B.oa,B.ho,B.El,B.k,B.hm,B.hk,B.hm,B.k2,B.nO,B.hk,B.EK,B.k,B.hc,B.hb,B.hc,B.k0,B.nV,B.hb,B.EN,B.k,B.nS,B.o4,B.k9,B.jY,B.EM,B.En,B.k9,B.k,B.F_,B.ED,B.Ex,B.hh,B.k1,B.Eq,B.nJ,B.l,B.l,B.oe,B.EH,B.eC,B.k4,B.k9,B.jY)
+B.Ej=new A.v9(B.ai,B.k4,B.k,B.hf,B.ho,B.hf,B.eC,B.ob,B.ho,B.El,B.k,B.hm,B.hk,B.hm,B.k2,B.nP,B.hk,B.EK,B.k,B.hc,B.hb,B.hc,B.k0,B.nW,B.hb,B.EN,B.k,B.nT,B.o5,B.k9,B.jY,B.EM,B.En,B.k9,B.k,B.F_,B.ED,B.Ex,B.hh,B.k1,B.Eq,B.nJ,B.l,B.l,B.oe,B.EH,B.eC,B.k4,B.k9,B.jY)
 B.EC=new A.O(1,0.2196078431372549,0.11764705882352941,0.4470588235294118,B.h)
 B.EI=new A.O(1,0.2,0.17647058823529413,0.2549019607843137,B.h)
 B.Er=new A.O(1,0.28627450980392155,0.1450980392156863,0.19607843137254902,B.h)
@@ -105354,7 +105354,7 @@ B.Em=new A.O(1,0.12941176470588237,0.12156862745098039,0.14901960784313725,B.h)
 B.F8=new A.O(1,0.16862745098039217,0.1607843137254902,0.18823529411764706,B.h)
 B.Eu=new A.O(1,0.21176470588235294,0.20392156862745098,0.23137254901960785,B.h)
 B.Eo=new A.O(1,0.5764705882352941,0.5607843137254902,0.6,B.h)
-B.Ek=new A.v9(B.am,B.eC,B.EC,B.ho,B.hf,B.hf,B.eC,B.oa,B.ho,B.k2,B.EI,B.hk,B.hm,B.hm,B.k2,B.nO,B.hk,B.k0,B.Er,B.hb,B.hc,B.hc,B.k0,B.nV,B.hb,B.Ep,B.EY,B.o4,B.nS,B.k6,B.hh,B.k1,B.k6,B.EE,B.EU,B.jY,B.Em,B.F8,B.Eu,B.nJ,B.Eo,B.k1,B.l,B.l,B.hh,B.oe,B.k4,B.eC,B.k6,B.hh)
+B.Ek=new A.v9(B.am,B.eC,B.EC,B.ho,B.hf,B.hf,B.eC,B.ob,B.ho,B.k2,B.EI,B.hk,B.hm,B.hm,B.k2,B.nP,B.hk,B.k0,B.Er,B.hb,B.hc,B.hc,B.k0,B.nW,B.hb,B.Ep,B.EY,B.o5,B.nT,B.k6,B.hh,B.k1,B.k6,B.EE,B.EU,B.jY,B.Em,B.F8,B.Eu,B.nJ,B.Eo,B.k1,B.l,B.l,B.hh,B.oe,B.k4,B.eC,B.k6,B.hh)
 B.jW=new A.Nt(2,"displayP3")
 B.eA=new A.O(1,0.3803921568627451,0.3803921568627451,0.3803921568627451,B.h)
 B.Et=new A.O(0.4,0.7843137254901961,0.7843137254901961,0.7843137254901961,B.h)
@@ -105364,21 +105364,22 @@ B.Ey=new A.O(1,0.8274509803921568,0.1843137254901961,0.1843137254901961,B.h)
 B.Ez=new A.O(0.9411764705882353,0.0196078431372549,0.027450980392156862,0.03137254901960784,B.h)
 B.EA=new A.O(1,0.12941176470588237,0.12941176470588237,0.12941176470588237,B.h)
 B.C=new A.O(0,0,0,0,B.h)
+B.nL=new A.O(1,0.08235294117647059,0.5019607843137255,0.23921568627450981,B.h)
 B.jZ=new A.O(1,0.9450980392156862,0.9529411764705882,0.9529411764705882,B.h)
-B.nM=new A.O(0,1,1,1,B.h)
+B.nN=new A.O(0,1,1,1,B.h)
 B.bm=new A.O(1,0.0784313725490196,0.09411764705882353,0.10588235294117647,B.h)
 B.EF=new A.O(0.03137254901960784,0,0,0,B.h)
 B.cY=new A.O(1,0.25882352941176473,0.25882352941176473,0.25882352941176473,B.h)
-B.nR=new A.O(1,0.12941176470588237,0.5882352941176471,0.9529411764705882,B.h)
+B.nS=new A.O(1,0.12941176470588237,0.5882352941176471,0.9529411764705882,B.h)
 B.P=new A.O(0.5411764705882353,0,0,0,B.h)
-B.nU=new A.O(0.5019607843137255,0.5019607843137255,0.5019607843137255,0.5019607843137255,B.h)
+B.nV=new A.O(0.5019607843137255,0.5019607843137255,0.5019607843137255,0.5019607843137255,B.h)
 B.U=new A.O(0.8666666666666667,0,0,0,B.h)
-B.nW=new A.O(1,0.5647058823529412,0.792156862745098,0.9764705882352941,B.h)
+B.nX=new A.O(1,0.5647058823529412,0.792156862745098,0.9764705882352941,B.h)
 B.EQ=new A.O(1,0.8745098039215686,0.9019607843137255,0.9254901960784314,B.h)
-B.o_=new A.O(0.25098039215686274,0.8,0.8,0.8,B.h)
-B.o1=new A.O(1,0.11764705882352941,0.5333333333333333,0.8980392156862745,B.h)
+B.o0=new A.O(0.25098039215686274,0.8,0.8,0.8,B.h)
+B.o2=new A.O(1,0.11764705882352941,0.5333333333333333,0.8980392156862745,B.h)
 B.ES=new A.O(1,0.9803921568627451,0.9803921568627451,0.9803921568627451,B.h)
-B.o2=new A.O(1,0.18823529411764706,0.18823529411764706,0.18823529411764706,B.h)
+B.o3=new A.O(1,0.18823529411764706,0.18823529411764706,0.18823529411764706,B.h)
 B.ET=new A.O(0.12156862745098039,0,0,0,B.h)
 B.EV=new A.O(1,0.8784313725490196,0.8784313725490196,0.8784313725490196,B.h)
 B.EW=new A.O(0.0392156862745098,0,0,0,B.h)
@@ -105387,14 +105388,13 @@ B.k5=new A.O(0.4,0.7372549019607844,0.7372549019607844,0.7372549019607844,B.h)
 B.EZ=new A.O(0.3803921568627451,0,0,0,B.h)
 B.F2=new A.O(1,0.7058823529411765,0.13725490196078433,0.09411764705882353,B.h)
 B.F3=new A.O(0.12156862745098039,1,1,1,B.h)
-B.o6=new A.O(1,0.7333333333333333,0.8705882352941177,0.984313725490196,B.h)
+B.o7=new A.O(1,0.7333333333333333,0.8705882352941177,0.984313725490196,B.h)
 B.F4=new A.O(0.3843137254901961,1,1,1,B.h)
 B.F5=new A.O(0.6,1,1,1,B.h)
-B.o9=new A.O(1,0.09803921568627451,0.4627450980392157,0.8235294117647058,B.h)
+B.oa=new A.O(1,0.09803921568627451,0.4627450980392157,0.8235294117647058,B.h)
 B.W=new A.O(0.7019607843137254,1,1,1,B.h)
 B.F6=new A.O(1,0.6196078431372549,0.6196078431372549,0.6196078431372549,B.h)
 B.F7=new A.O(0.5019607843137255,0,0,0,B.h)
-B.od=new A.O(1,0.7254901960784313,0.23529411764705882,0.023529411764705882,B.h)
 B.F9=new A.O(0.03137254901960784,0.6196078431372549,0.6196078431372549,0.6196078431372549,B.h)
 B.Fd=new A.O(0.9411764705882353,0.7529411764705882,0.7529411764705882,0.7529411764705882,B.h)
 B.R=new A.os(0,"start")
@@ -105407,8 +105407,8 @@ B.aw=new A.b0(0,0,0,0)
 B.a1s=new A.aB2(0,"material")
 B.PL=new A.oL("esri",B.Yh,B.Yf,null,t.GW)
 B.Yk=new A.bJ("MapTiler Satellite",null,null,null,null,null,null,null,null)
-B.Y3=new A.bJ("1\u20132 m, lokalno ostreje \xb7 potrebuje brezpla\u010den klju\u010d",null,null,null,null,null,null,null,null)
-B.PN=new A.oL("maptiler",B.Yk,B.Y3,null,t.GW)
+B.Y2=new A.bJ("1\u20132 m, lokalno ostreje \xb7 potrebuje brezpla\u010den klju\u010d",null,null,null,null,null,null,null,null)
+B.PN=new A.oL("maptiler",B.Yk,B.Y2,null,t.GW)
 B.Yv=new A.bJ("Sentinel-2 cloudless",null,null,null,null,null,null,null,null)
 B.Yd=new A.bJ("10 m \xb7 odprti podatki",null,null,null,null,null,null,null,null)
 B.PM=new A.oL("sentinel",B.Yv,B.Yd,null,t.GW)
@@ -105458,10 +105458,10 @@ B.Fv=new A.cq(B.eD,null,null,B.eD,B.ha,B.eD,B.ha,B.eD,B.ha,B.eD,B.ha)
 B.eE=new A.O(1,0.8392156862745098,0.8392156862745098,0.8392156862745098,B.h)
 B.Fw=new A.cq(B.eE,null,null,B.eE,B.cY,B.eE,B.cY,B.eE,B.cY,B.eE,B.cY)
 B.ka=new A.O(1,0,0.47843137254901963,1,B.h)
-B.o0=new A.O(1,0.0392156862745098,0.5176470588235295,1,B.h)
+B.o1=new A.O(1,0.0392156862745098,0.5176470588235295,1,B.h)
 B.nG=new A.O(1,0,0.25098039215686274,0.8666666666666667,B.h)
-B.nP=new A.O(1,0.25098039215686274,0.611764705882353,1,B.h)
-B.c6=new A.cq(B.ka,"systemBlue",null,B.ka,B.o0,B.nG,B.nP,B.ka,B.o0,B.nG,B.nP)
+B.nQ=new A.O(1,0.25098039215686274,0.611764705882353,1,B.h)
+B.c6=new A.cq(B.ka,"systemBlue",null,B.ka,B.o1,B.nG,B.nQ,B.ka,B.o1,B.nG,B.nQ)
 B.hl=new A.O(1,0.19607843137254902,0.39215686274509803,0.8431372549019608,B.h)
 B.Fx=new A.cq(B.c6,null,null,B.c6,B.hl,B.c6,B.hl,B.c6,B.hl,B.c6,B.hl)
 B.Fy=new A.cq(B.aI,null,null,B.aI,B.aI,B.aI,B.aI,B.aI,B.aI,B.aI,B.aI)
@@ -105469,18 +105469,18 @@ B.eI=new A.O(0.6980392156862745,1,1,1,B.h)
 B.hd=new A.O(0.6980392156862745,0.18823529411764706,0.18823529411764706,0.18823529411764706,B.h)
 B.FA=new A.cq(B.eI,null,null,B.eI,B.hd,B.eI,B.hd,B.eI,B.hd,B.eI,B.hd)
 B.k7=new A.O(1,0.20392156862745098,0.7803921568627451,0.34901960784313724,B.h)
-B.nL=new A.O(1,0.18823529411764706,0.8196078431372549,0.34509803921568627,B.h)
-B.nX=new A.O(1,0.1411764705882353,0.5411764705882353,0.23921568627450981,B.h)
+B.nM=new A.O(1,0.18823529411764706,0.8196078431372549,0.34509803921568627,B.h)
+B.nY=new A.O(1,0.1411764705882353,0.5411764705882353,0.23921568627450981,B.h)
 B.nI=new A.O(1,0.18823529411764706,0.8588235294117647,0.3568627450980392,B.h)
-B.ok=new A.cq(B.k7,"systemGreen",null,B.k7,B.nL,B.nX,B.nI,B.k7,B.nL,B.nX,B.nI)
+B.ok=new A.cq(B.k7,"systemGreen",null,B.k7,B.nM,B.nY,B.nI,B.k7,B.nM,B.nY,B.nI)
 B.eF=new A.O(0.06274509803921569,0,0,0,B.h)
 B.he=new A.O(0.06274509803921569,1,1,1,B.h)
 B.FB=new A.cq(B.eF,null,null,B.eF,B.he,B.eF,B.he,B.eF,B.he,B.eF,B.he)
 B.k8=new A.O(0.2980392156862745,0.23529411764705882,0.23529411764705882,0.2627450980392157,B.h)
-B.nN=new A.O(0.2980392156862745,0.9215686274509803,0.9215686274509803,0.9607843137254902,B.h)
-B.o8=new A.O(0.3764705882352941,0.23529411764705882,0.23529411764705882,0.2627450980392157,B.h)
-B.nZ=new A.O(0.3764705882352941,0.9215686274509803,0.9215686274509803,0.9607843137254902,B.h)
-B.FC=new A.cq(B.k8,"tertiaryLabel",null,B.k8,B.nN,B.o8,B.nZ,B.k8,B.nN,B.o8,B.nZ)
+B.nO=new A.O(0.2980392156862745,0.9215686274509803,0.9215686274509803,0.9607843137254902,B.h)
+B.o9=new A.O(0.3764705882352941,0.23529411764705882,0.23529411764705882,0.2627450980392157,B.h)
+B.o_=new A.O(0.3764705882352941,0.9215686274509803,0.9215686274509803,0.9607843137254902,B.h)
+B.FC=new A.cq(B.k8,"tertiaryLabel",null,B.k8,B.nO,B.o9,B.o_,B.k8,B.nO,B.o9,B.o_)
 B.ez=new A.O(1,0.9647058823529412,0.9647058823529412,0.9647058823529412,B.h)
 B.hj=new A.O(1,0.13333333333333333,0.13333333333333333,0.13333333333333333,B.h)
 B.FD=new A.cq(B.ez,null,null,B.ez,B.hj,B.ez,B.hj,B.ez,B.hj,B.ez,B.hj)
@@ -105489,10 +105489,10 @@ B.FE=new A.cq(B.eH,null,null,B.eH,B.aI,B.eH,B.aI,B.eH,B.aI,B.eH,B.aI)
 B.h9=new A.O(1,0.8705882352941177,0.9098039215686274,0.9725490196078431,B.h)
 B.FF=new A.cq(B.k,null,null,B.k,B.h9,B.k,B.h9,B.k,B.h9,B.k,B.h9)
 B.k3=new A.O(0.1568627450980392,0.47058823529411764,0.47058823529411764,0.5019607843137255,B.h)
-B.oc=new A.O(0.3176470588235294,0.47058823529411764,0.47058823529411764,0.5019607843137255,B.h)
-B.o5=new A.O(0.23921568627450981,0.47058823529411764,0.47058823529411764,0.5019607843137255,B.h)
+B.od=new A.O(0.3176470588235294,0.47058823529411764,0.47058823529411764,0.5019607843137255,B.h)
+B.o6=new A.O(0.23921568627450981,0.47058823529411764,0.47058823529411764,0.5019607843137255,B.h)
 B.nK=new A.O(0.4,0.47058823529411764,0.47058823529411764,0.5019607843137255,B.h)
-B.FG=new A.cq(B.k3,"secondarySystemFill",null,B.k3,B.oc,B.o5,B.nK,B.k3,B.oc,B.o5,B.nK)
+B.FG=new A.cq(B.k3,"secondarySystemFill",null,B.k3,B.od,B.o6,B.nK,B.k3,B.od,B.o6,B.nK)
 B.hw=new A.cq(B.l,null,null,B.l,B.k,B.l,B.k,B.l,B.k,B.l,B.k)
 B.eJ=new A.O(1,0.7215686274509804,0.7215686274509804,0.7215686274509804,B.h)
 B.hn=new A.O(1,0.3568627450980392,0.3568627450980392,0.3568627450980392,B.h)
@@ -105501,10 +105501,10 @@ B.eB=new A.O(1,0.6,0.6,0.6,B.h)
 B.hi=new A.O(1,0.4588235294117647,0.4588235294117647,0.4588235294117647,B.h)
 B.eK=new A.cq(B.eB,"inactiveGray",null,B.eB,B.hi,B.eB,B.hi,B.eB,B.hi,B.eB,B.hi)
 B.k_=new A.O(0.0784313725490196,0.4549019607843137,0.4549019607843137,0.5019607843137255,B.h)
-B.o3=new A.O(0.17647058823529413,0.4627450980392157,0.4627450980392157,0.5019607843137255,B.h)
-B.nY=new A.O(0.1568627450980392,0.4549019607843137,0.4549019607843137,0.5019607843137255,B.h)
-B.o7=new A.O(0.25882352941176473,0.4627450980392157,0.4627450980392157,0.5019607843137255,B.h)
-B.FI=new A.cq(B.k_,"quaternarySystemFill",null,B.k_,B.o3,B.nY,B.o7,B.k_,B.o3,B.nY,B.o7)
+B.o4=new A.O(0.17647058823529413,0.4627450980392157,0.4627450980392157,0.5019607843137255,B.h)
+B.nZ=new A.O(0.1568627450980392,0.4549019607843137,0.4549019607843137,0.5019607843137255,B.h)
+B.o8=new A.O(0.25882352941176473,0.4627450980392157,0.4627450980392157,0.5019607843137255,B.h)
+B.FI=new A.cq(B.k_,"quaternarySystemFill",null,B.k_,B.o4,B.nZ,B.o8,B.k_,B.o4,B.nZ,B.o8)
 B.eG=new A.O(0.9411764705882353,0.9764705882352941,0.9764705882352941,0.9764705882352941,B.h)
 B.h8=new A.O(0.9411764705882353,0.11372549019607843,0.11372549019607843,0.11372549019607843,B.h)
 B.Fu=new A.cq(B.eG,null,null,B.eG,B.h8,B.eG,B.h8,B.eG,B.h8,B.eG,B.h8)
@@ -105683,23 +105683,23 @@ B.kZ=new A.qG(!1,!1,!1,!0)
 B.oD=new A.qH(!1,!1,!1,!1)
 B.oE=new A.qH(!1,!1,!1,!0)
 B.dM=new A.OW(0,"tight")
-B.Bb=new A.y(!0,B.od,null,null,null,null,12,B.cA,null,1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.XR=new A.bJ("KNJI\u017dNICA",null,B.Bb,null,null,null,null,null,null)
+B.B9=new A.y(!0,B.nL,null,null,null,null,12,B.cA,null,1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.Y8=new A.bJ("KNJI\u017dNICA",null,B.B9,null,null,null,null,null,null)
 B.cB=new A.hB(800)
 B.B5=new A.y(!0,null,null,null,null,null,20,B.cB,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Ye=new A.bJ("Moji pohodi",null,B.B5,null,null,null,null,null,null)
-B.KD=s([B.XR,B.Ye],t.p)
-B.Fg=new A.qq(B.av,B.R,B.ae,B.b5,null,B.cK,null,0,B.KD,null)
+B.L0=s([B.Y8,B.Ye],t.p)
+B.Fg=new A.qq(B.av,B.R,B.ae,B.b5,null,B.cK,null,0,B.L0,null)
 B.GW=new A.nZ(1,B.dM,B.Fg,null)
 B.Yb=new A.bJ("Nastavitve",null,B.B5,null,null,null,null,null,null)
 B.GX=new A.nZ(1,B.dM,B.Yb,null)
 B.eV=new A.hB(900)
 B.Wd=new A.y(!0,null,null,null,null,null,24,B.eV,null,0.5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.XW=new A.bJ("HIKEJOURNAL",null,B.Wd,null,null,null,null,null,null)
+B.XV=new A.bJ("HIKEJOURNAL",null,B.Wd,null,null,null,null,null,null)
 B.fw=new A.ea(null,4,null,null)
 B.B6=new A.y(!0,B.c5,null,null,null,null,null,null,null,null,null,null,1.4,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Ya=new A.bJ("Pohodi, GPX, slike in videi se shranijo v mapo HikeJournal na tvojem Google Drive in so enaki na telefonu in ra\u010dunalniku.",null,B.B6,null,null,null,null,null,null)
-B.La=s([B.XW,B.fw,B.Ya],t.p)
+B.La=s([B.XV,B.fw,B.Ya],t.p)
 B.Fh=new A.qq(B.av,B.R,B.ae,B.b5,null,B.cK,null,0,B.La,null)
 B.GY=new A.nZ(1,B.dM,B.Fh,null)
 B.GZ=new A.BG(null,null,null,null,null,null,null,null,null,null,null,null,null)
@@ -105975,7 +105975,7 @@ B.iT=new A.n0(5,"end")
 B.JO=s([B.ci,B.eb,B.iS,B.fB,B.b0,B.iT],A.ay("D<n0>"))
 B.K3=s([2,1.13276676],t.n)
 B.J3=s([2.18349805,1.20311921],t.n)
-B.L0=s([2.33888662,1.28698796],t.n)
+B.L_=s([2.33888662,1.28698796],t.n)
 B.L2=s([2.48660575,1.36351941],t.n)
 B.JS=s([2.62226596,1.44717976],t.n)
 B.JZ=s([2.7514899,1.53385819],t.n)
@@ -105984,7 +105984,7 @@ B.K6=s([4.08649929,2.23811846],t.n)
 B.Kj=s([4.85481134,2.47563463],t.n)
 B.JX=s([5.62945551,2.72948597],t.n)
 B.K4=s([6.43023796,2.98020421],t.n)
-B.pi=s([B.K3,B.J3,B.L0,B.L2,B.JS,B.JZ,B.Ks,B.K6,B.Kj,B.JX,B.K4],t.zg)
+B.pi=s([B.K3,B.J3,B.L_,B.L2,B.JS,B.JZ,B.Ks,B.K6,B.Kj,B.JX,B.K4],t.zg)
 B.JQ=s(["Arial"],t.s)
 B.JR=s([B.jE,B.jF],A.ay("D<A_>"))
 B.JU=s(["-apple-system","BlinkMacSystemFont"],t.s)
@@ -106025,9 +106025,9 @@ B.dQ=new A.wc(2,"video")
 B.Kd=s([B.ih,B.vC,B.dQ],A.ay("D<wc>"))
 B.Ke=s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0],t.n)
 B.Cb=new A.MQ(2,"outer")
-B.nT=new A.O(0.09803921568627451,0,0,0,B.h)
+B.nU=new A.O(0.09803921568627451,0,0,0,B.h)
 B.f=new A.k(0,0)
-B.CB=new A.e4(0.2,B.Cb,B.nT,B.f,11)
+B.CB=new A.e4(0.2,B.Cb,B.nU,B.f,11)
 B.Kg=s([B.CB],t.sq)
 B.AL=new A.FB(0,"left")
 B.AM=new A.FB(1,"right")
@@ -106073,47 +106073,47 @@ B.H6=new A.eV(11,4,"Single-Precision Floating Point (32-bit)",!0,!1)
 B.H9=new A.eV(12,8,"Double-Precision Floating Point (64-bit)",!0,!1)
 B.H7=new A.eV(13,4,"IFD",!0,!1)
 B.KA=s([B.hK,B.H3,B.Ha,B.H1,B.H5,B.H8,B.Hc,B.H2,B.Hb,B.H4,B.Hd,B.H6,B.H9,B.H7],A.ay("D<eV>"))
-B.KE=s(["click","scroll"],t.s)
+B.KD=s(["click","scroll"],t.s)
 B.CK=new A.uH()
 B.iA=new A.T3(1,"page")
 B.iB=new A.f9(B.bc,B.iA)
-B.KF=s([B.CK,B.iB],A.ay("D<bf>"))
-B.KW=s([],t.QP)
-B.KU=s([],t.sq)
+B.KE=s([B.CK,B.iB],A.ay("D<bf>"))
+B.KV=s([],t.QP)
+B.KT=s([],t.sq)
 B.pt=s([],A.ay("D<baY>"))
-B.KK=s([],t.D)
+B.KJ=s([],t.D)
 B.pr=s([],t.SE)
-B.KM=s([],t.fJ)
-B.KY=s([],t.ER)
+B.KL=s([],t.fJ)
+B.KX=s([],t.ER)
 B.a1f=s([],t.ss)
-B.KP=s([],t.cg)
+B.KO=s([],t.cg)
 B.pq=s([],t.tc)
 B.i2=s([],t.jl)
 B.pu=s([],t.wi)
-B.KR=s([],A.ay("D<l7<@>>"))
-B.KT=s([],t.zU)
+B.KQ=s([],A.ay("D<l7<@>>"))
+B.KS=s([],t.zU)
 B.lg=s([],t.AO)
-B.KO=s([],t.D1)
+B.KN=s([],t.D1)
 B.i1=s([],t.QF)
-B.KX=s([],t.Lx)
-B.KN=s([],t.AS)
+B.KW=s([],t.Lx)
+B.KM=s([],t.AS)
 B.a1g=s([],t.p)
-B.KS=s([],t.Fd)
-B.KQ=s([],A.ay("D<kj>"))
+B.KR=s([],t.Fd)
+B.KP=s([],A.ay("D<kj>"))
 B.ps=s([],t.ov)
-B.KL=s([],t.n)
-B.KI=s([],t.t)
+B.KK=s([],t.n)
+B.KH=s([],t.t)
 B.o=s([],t.ee)
-B.KJ=s([],t._m)
+B.KI=s([],t._m)
 B.pv=s(["esri","maptiler","sentinel"],t.s)
 B.Ob=new A.k(0,2)
-B.Cz=new A.e4(0.75,B.cR,B.nT,B.Ob,1.5)
+B.Cz=new A.e4(0.75,B.cR,B.nU,B.Ob,1.5)
 B.L3=s([B.Cz],t.sq)
 B.eZ=s([B.cQ,B.bM,B.fS,B.fT,B.fU],t.QP)
 B.JH=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
-B.KG=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
+B.KF=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
 B.JV=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
-B.Ld=s([B.JH,B.KG,B.JV],t.zg)
+B.Ld=s([B.JH,B.KF,B.JV],t.zg)
 B.Le=s([45,95,45,20,45,90,45,45,45],t.n)
 B.Lf=s([120,120,20,45,20,15,20,120,120],t.n)
 B.dR=new A.ii(0,"controlModifier")
@@ -106747,7 +106747,7 @@ B.Je=s([4294968072,null,null,8589935161],t.Z)
 B.Ko=s([8589934850,8589934850,8589934851,null],t.Z)
 B.vz=new A.bF(["*",B.Jh,"+",B.Ji,"-",B.Jj,".",B.Jk,"/",B.Jl,"0",B.Jm,"1",B.Jn,"2",B.Jp,"3",B.Jr,"4",B.Js,"5",B.Jt,"6",B.Ju,"7",B.Jv,"8",B.Jw,"9",B.Jy,"Alt",B.Kl,"AltGraph",B.J6,"ArrowDown",B.J7,"ArrowLeft",B.J8,"ArrowRight",B.J9,"ArrowUp",B.Ja,"Clear",B.Jf,"Control",B.Km,"Delete",B.J5,"End",B.Jb,"Enter",B.J4,"Home",B.Jc,"Insert",B.Jg,"Meta",B.Kn,"PageDown",B.Jd,"PageUp",B.Je,"Shift",B.Ko],A.ay("bF<f,C<m?>>"))
 B.Jx=s([B.pE,null,null,B.vk],t.L)
-B.KZ=s([B.v6,null,null,B.vl],t.L)
+B.KY=s([B.v6,null,null,B.vl],t.L)
 B.K1=s([B.v7,null,null,B.vm],t.L)
 B.Kq=s([B.v8,null,null,B.d5],t.L)
 B.IW=s([B.v9,null,null,B.vn],t.L)
@@ -106759,7 +106759,7 @@ B.L6=s([B.ve,null,null,B.d7],t.L)
 B.JD=s([B.vf,null,null,B.ls],t.L)
 B.J1=s([B.vg,null,null,B.d8],t.L)
 B.JP=s([B.vh,null,null,B.fa],t.L)
-B.L_=s([B.vi,null,null,B.d9],t.L)
+B.KZ=s([B.vi,null,null,B.d9],t.L)
 B.L1=s([B.vj,null,null,B.fb],t.L)
 B.JI=s([B.f6,B.f6,B.i9,null],t.L)
 B.Lc=s([B.i5,null,B.i5,null],t.L)
@@ -106776,9 +106776,9 @@ B.Kb=s([B.d3,null,null,B.fa],t.L)
 B.L5=s([B.f4,null,null,B.lr],t.L)
 B.JK=s([B.f7,B.f7,B.ia,null],t.L)
 B.Kc=s([B.f2,null,null,B.f9],t.L)
-B.KH=s([B.f3,null,null,B.fb],t.L)
+B.KG=s([B.f3,null,null,B.fb],t.L)
 B.JL=s([B.cD,B.cD,B.d4,null],t.L)
-B.Nt=new A.bF(["*",B.Jx,"+",B.KZ,"-",B.K1,".",B.Kq,"/",B.IW,"0",B.Lb,"1",B.L7,"2",B.JG,"3",B.Lh,"4",B.L6,"5",B.JD,"6",B.J1,"7",B.JP,"8",B.L_,"9",B.L1,"Alt",B.JI,"AltGraph",B.Lc,"ArrowDown",B.K7,"ArrowLeft",B.K8,"ArrowRight",B.K9,"ArrowUp",B.Lg,"Clear",B.L4,"Control",B.JJ,"Delete",B.KB,"End",B.Ka,"Enter",B.JC,"Home",B.Kb,"Insert",B.L5,"Meta",B.JK,"PageDown",B.Kc,"PageUp",B.KH,"Shift",B.JL],A.ay("bF<f,C<i?>>"))
+B.Nt=new A.bF(["*",B.Jx,"+",B.KY,"-",B.K1,".",B.Kq,"/",B.IW,"0",B.Lb,"1",B.L7,"2",B.JG,"3",B.Lh,"4",B.L6,"5",B.JD,"6",B.J1,"7",B.JP,"8",B.KZ,"9",B.L1,"Alt",B.JI,"AltGraph",B.Lc,"ArrowDown",B.K7,"ArrowLeft",B.K8,"ArrowRight",B.K9,"ArrowUp",B.Lg,"Clear",B.L4,"Control",B.JJ,"Delete",B.KB,"End",B.Ka,"Enter",B.JC,"Home",B.Kb,"Insert",B.L5,"Meta",B.JK,"PageDown",B.Kc,"PageUp",B.KG,"Shift",B.JL],A.ay("bF<f,C<i?>>"))
 B.Nu=new A.bF([1,"sRGB",2,"Adobe RGB",65535,"Uncalibrated"],t.g)
 B.Nv=new A.bF([1,"Film Scanner",2,"Reflection Print Scanner",3,"Digital Camera"],t.g)
 B.Nw=new A.bF([1,"Not Absolute",2,"Pixels/Inch",3,"Pixels/Centimeter"],t.g)
@@ -107079,7 +107079,7 @@ B.EB=new A.O(1,0.39215686274509803,0.7098039215686275,0.9647058823529412,B.h)
 B.EG=new A.O(1,0.25882352941176473,0.6470588235294118,0.9607843137254902,B.h)
 B.Fb=new A.O(1,0.08235294117647059,0.396078431372549,0.7529411764705882,B.h)
 B.ER=new A.O(1,0.050980392156862744,0.2784313725490196,0.6313725490196078,B.h)
-B.NA=new A.bF([50,B.nH,100,B.o6,200,B.nW,300,B.EB,400,B.EG,500,B.nR,600,B.o1,700,B.o9,800,B.Fb,900,B.ER],A.ay("bF<m,O>"))
+B.NA=new A.bF([50,B.nH,100,B.o7,200,B.nX,300,B.EB,400,B.EG,500,B.nS,600,B.o2,700,B.oa,800,B.Fb,900,B.ER],A.ay("bF<m,O>"))
 B.ie=new A.QB(B.NA,1,0.12941176470588237,0.5882352941176471,0.9529411764705882,B.h)
 B.NF=new A.rq(0,"padded")
 B.lz=new A.rq(1,"shrinkWrap")
@@ -107170,8 +107170,8 @@ B.vW=new A.Rg(0,"nearestOverlay")
 B.OT=new A.Rg(1,"rootOverlay")
 B.Gz=new A.b0(0,2,0,4)
 B.ec=new A.y(!0,B.c5,null,null,null,null,12,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Y8=new A.bJ("Shranjeno na tvoj Google Drive: velja na vseh tvojih napravah.",null,B.ec,null,null,null,null,null,null)
-B.OU=new A.d7(B.Gz,B.Y8,null)
+B.Y7=new A.bJ("Shranjeno na tvoj Google Drive: velja na vseh tvojih napravah.",null,B.ec,null,null,null,null,null,null)
+B.OU=new A.d7(B.Gz,B.Y7,null)
 B.GN=new A.b0(24,24,24,24)
 B.Eb=new A.kK(B.Z,null,null,B.nE,null)
 B.OV=new A.d7(B.GN,B.Eb,null)
@@ -107273,8 +107273,8 @@ B.Qs=new A.EE(1333)
 B.lT=new A.EE(2222)
 B.Qt=new A.SP(null,null)
 B.Wu=new A.y(!0,B.c5,null,null,null,null,26,B.eV,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.XS=new A.bJ("HIKEJOURNAL",null,B.Wu,null,null,null,null,null,null)
-B.E9=new A.kK(B.Z,null,null,B.XS,null)
+B.XR=new A.bJ("HIKEJOURNAL",null,B.Wu,null,null,null,null,null,null)
+B.E9=new A.kK(B.Z,null,null,B.XR,null)
 B.Qu=new A.wR(null,B.E9,null,null)
 B.df=new A.ti(0,"idle")
 B.zF=new A.ti(1,"transientCallbacks")
@@ -107639,8 +107639,8 @@ B.F1=new A.O(0.8156862745098039,1,0,0,B.h)
 B.EP=new A.O(1,1,1,0,B.h)
 B.T6=new A.Ub(1,"double")
 B.VI=new A.y(!0,B.F1,null,"monospace",null,null,48,B.eV,null,null,null,null,null,null,null,null,null,B.mp,B.EP,B.T6,null,"fallback style; consider putting your text in a Material",null,null,null,null)
-B.B9=new A.y(!0,B.c5,null,null,null,null,13,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Ba=new A.y(!0,null,null,null,null,null,15,B.hQ,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.Ba=new A.y(!0,B.c5,null,null,null,null,13,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.Bb=new A.y(!0,null,null,null,null,null,15,B.hQ,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Wy=new A.y(!0,null,null,null,null,null,null,B.r,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Bc=new A.y(!1,null,null,null,null,null,14,B.r,null,-0.15,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.iX=new A.y(!0,null,null,null,null,null,null,B.cB,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
@@ -107909,23 +107909,23 @@ B.TM=new A.y(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.XO=new A.eo(B.Vz,B.Uv,B.VA,B.W0,B.Ub,B.Uj,B.UP,B.VW,B.V0,B.Wn,B.TF,B.TX,B.Wk,B.WI,B.TM)
 B.XP=new A.bJ("Nadaljuj",null,null,null,null,null,null,null,null)
 B.XQ=new A.bJ("Poka\u017ei v 3D",null,null,null,null,null,null,null,null)
-B.XT=new A.bJ("Uvozi prvi GPX",null,null,null,null,null,null,null,null)
-B.XU=new A.bJ("Ob uvozu poi\u0161\u010di ime izhodi\u0161\u010da in vrha (OpenStreetMap)",null,null,null,null,null,null,null,null)
+B.XS=new A.bJ("Uvozi prvi GPX",null,null,null,null,null,null,null,null)
+B.XT=new A.bJ("Ob uvozu poi\u0161\u010di ime izhodi\u0161\u010da in vrha (OpenStreetMap)",null,null,null,null,null,null,null,null)
 B.EL=new A.O(1,1,0.47843137254901963,0.4196078431372549,B.h)
 B.WG=new A.y(!0,B.EL,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.XV=new A.bJ("Izbri\u0161i",null,B.WG,null,null,null,null,null,null)
-B.XX=new A.bJ("Odjava",null,null,null,null,null,null,null,null)
+B.XU=new A.bJ("Izbri\u0161i",null,B.WG,null,null,null,null,null,null)
+B.XW=new A.bJ("Odjava",null,null,null,null,null,null,null,null)
 B.B8=new A.y(!0,null,null,null,null,null,15,B.cB,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.XY=new A.bJ("Zemljevid",null,B.B8,null,null,null,null,null,null)
-B.XZ=new A.bJ("Brezpla\u010den klju\u010d dobi\u0161 na cloud.maptiler.com",null,null,null,null,null,null,null,null)
-B.Y_=new A.bJ("Relief: \xa9 Mapterhorn (za Slovenijo GURS LiDAR). Satelit: Esri, Maxar, Earthstar Geographics / \xa9 MapTiler / Sentinel-2 cloudless (EOX). Meje: Natural Earth. Imena: \xa9 OpenStreetMap.",null,B.ec,null,null,null,null,null,null)
-B.Y0=new A.bJ("Prekli\u010di",null,B.B7,null,null,null,null,null,null)
-B.Y1=new A.bJ("Aplikacija vidi samo datoteke, ki jih je ustvarila sama \u2014 ostalega tvojega Drive ne vidi.",null,B.B9,null,null,null,null,null,null)
-B.Y2=new A.bJ("Preizkusi brez prijave (podatki se ne shranijo)",null,null,null,null,null,null,null,null)
-B.Y4=new A.bJ("Res izbri\u0161i",null,null,null,null,null,null,null,null)
-B.Y5=new A.bJ("Potek",null,B.iX,null,null,null,null,null,null)
-B.Y6=new A.bJ("Vi\u0161inski profil",null,B.iX,null,null,null,null,null,null)
-B.Y7=new A.bJ("Prekli\u010di",null,null,null,null,null,null,null,null)
+B.XX=new A.bJ("Zemljevid",null,B.B8,null,null,null,null,null,null)
+B.XY=new A.bJ("Brezpla\u010den klju\u010d dobi\u0161 na cloud.maptiler.com",null,null,null,null,null,null,null,null)
+B.XZ=new A.bJ("Relief: \xa9 Mapterhorn (za Slovenijo GURS LiDAR). Satelit: Esri, Maxar, Earthstar Geographics / \xa9 MapTiler / Sentinel-2 cloudless (EOX). Meje: Natural Earth. Imena: \xa9 OpenStreetMap.",null,B.ec,null,null,null,null,null,null)
+B.Y_=new A.bJ("Prekli\u010di",null,B.B7,null,null,null,null,null,null)
+B.Y0=new A.bJ("Aplikacija vidi samo datoteke, ki jih je ustvarila sama \u2014 ostalega tvojega Drive ne vidi.",null,B.Ba,null,null,null,null,null,null)
+B.Y1=new A.bJ("Preizkusi brez prijave (podatki se ne shranijo)",null,null,null,null,null,null,null,null)
+B.Y3=new A.bJ("Res izbri\u0161i",null,null,null,null,null,null,null,null)
+B.Y4=new A.bJ("Potek",null,B.iX,null,null,null,null,null,null)
+B.Y5=new A.bJ("Vi\u0161inski profil",null,B.iX,null,null,null,null,null,null)
+B.Y6=new A.bJ("Prekli\u010di",null,null,null,null,null,null,null,null)
 B.Y9=new A.bJ("Vsi pohodi",null,null,null,null,null,null,null,null)
 B.Yc=new A.bJ("Google Drive",null,B.B8,null,null,null,null,null,null)
 B.Yg=new A.bJ("Izbri\u0161i pohod",null,null,null,null,null,null,null,null)
@@ -107933,8 +107933,8 @@ B.Yi=new A.bJ("Prika\u017ei satelit (izklopljeno: samo relief)",null,null,null,n
 B.Yj=new A.bJ("Ni zadetkov.",null,B.ms,null,null,null,null,null,null)
 B.Yl=new A.bJ("Shrani",null,null,null,null,null,null,null,null)
 B.Ym=new A.bJ("Satelitski posnetek",null,B.B4,null,null,null,null,null,null)
-B.Yp=new A.bJ("Samodejno 3D ob pribli\u017eanju",null,null,null,null,null,null,null,null)
-B.Yq=new A.bJ("Uvozi GPX iz Strave (aktivnost \u2192 \u22ef \u2192 Export GPX). Vsak pohod se izri\u0161e kot oran\u017ena \u010drta na 3D zemljevidu.",null,B.B6,null,null,null,null,null,null)
+B.Yp=new A.bJ("Uvozi GPX iz Strave (aktivnost \u2192 \u22ef \u2192 Export GPX). Vsak pohod se izri\u0161e kot zelena \u010drta na 3D zemljevidu.",null,B.B6,null,null,null,null,null,null)
+B.Yq=new A.bJ("Samodejno 3D ob pribli\u017eanju",null,null,null,null,null,null,null,null)
 B.Yr=new A.bJ("Slike z GPS se poka\u017eejo na zemljevidu na kraju posnetka, ostale po \u010dasu posnetka na poti.",null,B.ec,null,null,null,null,null,null)
 B.Un=new A.y(!0,null,null,null,null,null,18,B.cB,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Ys=new A.bJ("HikeJournal",null,B.Un,null,null,null,null,null,null)
@@ -108654,7 +108654,7 @@ s($,"bdY","aWb",()=>A.c5("[\\p{Space_Separator}\\p{Punctuation}]",!0,!0))
 s($,"bep","aWs",()=>A.c5("\\p{Space_Separator}",!0,!0))
 r($,"bd5","aVG",()=>B.Fd)
 r($,"bd7","aVI",()=>{var q=null
-return A.aQF(q,B.o2,q,q,q,q,"sans-serif",q,q,18,q,q,q,q,q,q,q,q,q,q,q)})
+return A.aQF(q,B.o3,q,q,q,q,"sans-serif",q,q,18,q,q,q,q,q,q,q,q,q,q,q)})
 r($,"bd6","aVH",()=>{var q=null
 return A.aPo(q,q,q,q,q,q,q,q,q,B.ci,B.S,q)})
 s($,"bd8","aVJ",()=>A.aJW(65532))
