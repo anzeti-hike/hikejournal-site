@@ -23,7 +23,7 @@
 
   if (!window.maplibregl) { showError('Zemljevida ni bilo mogoče naložiti.'); return; }
 
-  var settings = { satSource: 'esri', maptilerKey: '', exaggeration: 1.2, satellite: true, auto3d: true, dark: false };
+  var settings = { satSource: 'esri', maptilerKey: '', exaggeration: 1.2, satellite: true, auto3d: true, peakLabels: true, dark: false };
   var padding = { top: 24, right: 24, bottom: 24, left: 24 };
   var hikes = [], selected = null, media = [];
   var terrainOn = false, flying = false, ready = false, queue = [];
@@ -185,6 +185,7 @@
           map.addLayer({ id: 'sat', type: 'raster', source: 'sat', minzoom: 4, paint: { 'raster-opacity': ['interpolate', ['linear'], ['zoom'], 4, 0, 6.5, 1] } }, 'shade');
         }
         map.setLayoutProperty('sat', 'visibility', settings.satellite ? 'visible' : 'none');
+        document.body.classList.toggle('nopeaks', settings.peakLabels === false);
         if (terrainOn) map.setTerrain({ source: 'dem', exaggeration: settings.exaggeration });
         break;
     }
